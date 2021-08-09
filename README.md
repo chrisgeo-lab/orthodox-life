@@ -12,6 +12,7 @@ The app currently has three rudimentary pages - a home page, a prayer book, and 
 <li>The readings tab only has two real readings, both of which are dynamic and update from https://www.goarch.org/ - the daily Epistle and Gospel lessons.</li>
 </ul>
 
+![ Alt text](orthodox-life-demo.gif) / ! [](orthodox-life-demo.gif)
 
 ## Improvements Upon Existing
 The current state of the app can be improved in a variety of ways. To begin, the home page could be more inviting, and there are issues with the displayed image that updates daily. Because the image is arbitrarily cropped, it sometimes crops so that relevant infromation from the image is not dispalyed. 
