@@ -100,152 +100,144 @@ class _HomeState extends State<Home> {
 
 
    Widget display() {
-        return  Column(
+        return  Stack(
           children: [
-            SizedBox(
-              height: 100.0,
-            ),
-            Expanded(
-              flex: 1,
-              child: FadingEdgeScrollView.fromSingleChildScrollView(
-                gradientFractionOnEnd: 0.2,
-                gradientFractionOnStart: 0.2,
-                child: SingleChildScrollView(
-                  controller: screenScrollController,
-                  child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Column(
-                        children: [
-                          Text(
-                            date,
-                            style: GoogleFonts.getFont(
-                              'Bentham',
-                              textStyle: TextStyle(
-                                color: textHighlightColor,
-                                fontSize: 45.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          Center(
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
-                              child: Text(
-                                'Fasting | ' + fasting.substring(fasting.indexOf('|')+2),
-                                style: GoogleFonts.getFont(
-                                  'Roboto Slab',
-                                  textStyle: TextStyle(
-                                    color: textColor,
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.normal,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Stack(
-                              children: [
-                                Column(
-                                  children: [
-                                    SizedBox(
-                                      height: 125.0,
-                                    ),
-                                    Container(
-                                      height: 450.0,
-                                      width: double.infinity,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15.0),
-                                        color: cardColor,
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.fromLTRB(25,135, 25, 5),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              'Today we commemorate:',
-                                              style: GoogleFonts.getFont(
-                                                'Roboto Slab',
-                                                textStyle: TextStyle(
-                                                  color: backgroundDarkColor,
-                                                  fontSize: 20.0,
-                                                  fontWeight: FontWeight.bold,
-                                                  letterSpacing: 1.5,
-                                                ),
-                                              ),
-                                            ),
-                                            Expanded(
-                                              flex: 1,
-                                              child: Padding(
-                                                padding: const EdgeInsets.fromLTRB(5, 4, 5, 0),
-                                                child: Scrollbar(
-                                                  isAlwaysShown: true,
-                                                  controller: textScrollController,
-                                                  child: FadingEdgeScrollView.fromSingleChildScrollView(
-                                                    gradientFractionOnEnd: 0.5,
-                                                    gradientFractionOnStart: 0.5,
-                                                    child: SingleChildScrollView(
-                                                      controller: textScrollController,
-                                                      child: Text(
-                                                           saintText,
-                                                        style: GoogleFonts.getFont(
-                                                          'Roboto Slab',
-                                                          textStyle: TextStyle(
-                                                            color: backgroundLightColor,
-                                                            fontSize: 20.0,
-                                                            fontWeight: FontWeight.normal,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                // TODO: SOMETIMES CROPS RELEVANCE OUT OF IMAGE
-                                Center(
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.transparent,
-                                    ),
-                                    height: 250.0,
-                                    width: 250.0,
-                                    child: Card(
-                                      color: cardColor,
-                                      child: CircleAvatar(
-                                        backgroundColor: Colors.transparent,
-                                        maxRadius: 2.0,
-                                        child: CircleAvatar(
-                                          backgroundColor: Colors.transparent,
-                                          foregroundColor: Colors.transparent,
-                                          maxRadius: 115.0,
-                                          backgroundImage:
-                                          NetworkImage(iconAddr),
-                                        ),
-                                      ),
-                                      elevation: 10.0,
-                                      shape: CircleBorder(),
-                                      clipBehavior: Clip.hardEdge,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                    ),
-                  ),
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(iconAddr),
+                ),
+              ),
+              child: new BackdropFilter(
+                filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                child: new Container(
+                  decoration: new BoxDecoration(color: Colors.black.withOpacity(0.7)),
                 ),
               ),
             ),
+        Column(
+        children: [
+        SizedBox(
+        height: 100.0,
+        ),
+     Expanded(
+     flex: 1,
+     child: Padding(
+     padding: const EdgeInsets.all(15.0),
+     child: Column(
+     children: [
+     Text(
+     date,
+     style: GoogleFonts.getFont(
+     'Bentham',
+     textStyle: TextStyle(
+     color: textHighlightColor,
+     fontSize: 45.0,
+     fontWeight: FontWeight.bold,
+     ),
+     ),
+     ),
+     Center(
+     child: Padding(
+     padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+     child: Text(
+     'Fasting | ' + fasting.substring(fasting.indexOf('|')+2),
+     style: GoogleFonts.getFont(
+     'Roboto Slab',
+     textStyle: TextStyle(
+     color: textColor.withAlpha(255),
+     fontSize: 20.0,
+     fontWeight: FontWeight.normal,
+     ),
+     ),
+     ),
+     ),
+     ),
+     Expanded(
+     flex: 1,
+     child: Padding(
+     padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+     child: Column(
+     children: [
+     SizedBox(
+     height: 25.0,
+     ),
+     Expanded(
+     flex: 1,
+     child: Container(
+     height: 200,
+     width: double.infinity,
+     decoration: BoxDecoration(
+     borderRadius: BorderRadius.circular(15.0),
+     color: navColor.withAlpha(5).withOpacity(0.7),
+     ),
+     child: Padding(
+     padding: const EdgeInsets.fromLTRB(25,20, 25, 5),
+     child: Column(
+     crossAxisAlignment: CrossAxisAlignment.start,
+     children: [
+     Text(
+     'Today we commemorate:',
+     style: GoogleFonts.getFont(
+     'Roboto Slab',
+     textStyle: TextStyle(
+     color: textHighlightColor,
+     fontSize: 20.0,
+     fontWeight: FontWeight.bold,
+     letterSpacing: 1.5,
+     ),
+     ),
+     ),
+     Expanded(
+     flex: 1,
+     child: Padding(
+     padding: const EdgeInsets.fromLTRB(5, 20, 5, 0),
+     child: Scrollbar(
+     isAlwaysShown: true,
+     controller: textScrollController,
+     child: FadingEdgeScrollView.fromSingleChildScrollView(
+     gradientFractionOnEnd: 0.5,
+     gradientFractionOnStart: 0.5,
+     child: SingleChildScrollView(
+     controller: textScrollController,
+     child: Text(
+     saintText,
+     style: GoogleFonts.getFont(
+     'Roboto Slab',
+     textStyle: TextStyle(
+     color: textColor,
+     fontSize: 20.0,
+     fontWeight: FontWeight.normal,
+     ),
+     ),
+     ),
+     ),
+     ),
+     ),
+     ),
+     ),
+     // Container(
+     //   height: 100.0,
+     // ),
+     ],
+     ),
+     ),
+     ),
+     ),
+     SizedBox(
+     height: 50.0,
+     ),
+     ],
+     ),
+     ),
+     ),
+     ],
+     ),
+     ),
+     ),
+     ],
+     ),
           ],
         );
    }
