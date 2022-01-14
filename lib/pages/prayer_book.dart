@@ -21,17 +21,34 @@ class _PrayerBookState extends State<PrayerBook> {
     return FadeIn(
       duration: Duration(milliseconds: 250),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 100, 0, 50),
-        child: Swiper(
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (BuildContext context,int index){
-            return PrayerCard(prayers[index], swiperController);
-          },
-          itemCount: prayers.length,
-          controller: swiperController,
-          itemHeight: 600.0,
-          itemWidth: 375.0,
-          layout: SwiperLayout.STACK,
+        padding: const EdgeInsets.fromLTRB(15.0, 115.0, 15.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+
+          children: [
+            Text(
+              "Prayer Book",
+              style: GoogleFonts.getFont(
+                'Bentham',
+                textStyle: TextStyle(
+                  color: textHighlightColor,
+                  fontSize: 45.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Swiper(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (BuildContext context,int index){
+                return PrayerCard(prayers[index], swiperController);
+              },
+              itemCount: prayers.length,
+              controller: swiperController,
+              itemHeight: 520.0,
+              itemWidth: 450.0,
+              layout: SwiperLayout.TINDER,
+            ),
+          ],
         ),
       ),
     );
@@ -76,77 +93,70 @@ class _PrayerCardState extends State<PrayerCard> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        height: 600.0,
-          width: 400.0,
-        child: Card(
-          elevation: 10.0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          color: cardColor,
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
-                  child: Text(
-                      widget.prayer.title,
-                    style: GoogleFonts.getFont(
-                      'Bentham',
-                      textStyle: TextStyle(
-                        color: backgroundDarkColor,
-                        fontSize: 45.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+    return Card(
+      elevation: 5.0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      color: cardColor,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
+              child: Text(
+                  widget.prayer.title,
+                style: GoogleFonts.getFont(
+                  'Bentham',
+                  textStyle: TextStyle(
+                    color: backgroundDarkColor,
+                    fontSize: 45.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 15, 0, 5),
-                    child: Container(
-                      height: 2,
-                      width: 300.0,
-                      decoration: BoxDecoration(
-                        color: selectedColor,
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                    ),
+              ),
+            ),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0, 15, 0, 5),
+                child: Container(
+                  height: 2,
+                  width: 300.0,
+                  decoration: BoxDecoration(
+                    color: selectedColor,
+                    borderRadius: BorderRadius.circular(15),
                   ),
                 ),
-                Expanded(
-                  flex: 1,
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
-                      child: Scrollbar(
-                        radius: Radius.circular(50.0),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Scrollbar(
+                    radius: Radius.circular(50.0),
+                    controller: scrollController,
+                    isAlwaysShown: true,
+                    child: FadingEdgeScrollView.fromSingleChildScrollView(
+                      gradientFractionOnEnd: 0.2,
+                      gradientFractionOnStart: 0.2,
+                      child: SingleChildScrollView(
                         controller: scrollController,
-                        isAlwaysShown: true,
-                        child: FadingEdgeScrollView.fromSingleChildScrollView(
-                          gradientFractionOnEnd: 0.2,
-                          gradientFractionOnStart: 0.2,
-                          child: SingleChildScrollView(
-                            controller: scrollController,
-                            scrollDirection: Axis.vertical,
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 15, 0, 5),
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(30,0,30,0),
-                                child: Text(
-                                  widget.prayer.text,
-                                  style: GoogleFonts.getFont(
-                                    'Roboto Slab',
-                                    textStyle: TextStyle(
-                                      color: Colors.grey[700],
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                  ),
+                        scrollDirection: Axis.vertical,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 15, 0, 5),
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(30,0,30,0),
+                            child: Text(
+                              widget.prayer.text,
+                              style: GoogleFonts.getFont(
+                                'Roboto Slab',
+                                textStyle: TextStyle(
+                                  color: Colors.grey[700],
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.normal,
                                 ),
                               ),
                             ),
@@ -154,46 +164,46 @@ class _PrayerCardState extends State<PrayerCard> {
                         ),
                       ),
                     ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      IconButton(
-                        iconSize: 28.0,
-                        icon: widget.prayer.favorited ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
-                        color: Colors.red[400],
-                        onPressed: (){
-                          changeFavorite();
-                        }
-                      ),
-                      Expanded(
-                        child: SizedBox(
-                          width: 30.0,
-                        ),
-                        flex: 1,
-                      ),
-                      IconButton(
-                          icon: Icon(Icons.arrow_back),
-                          color: backgroundDarkColor,
-                          onPressed: (){
-                            widget.swiperController.previous();
-                          }
-                      ),
-                      IconButton(
-                          icon: Icon(Icons.arrow_forward),
-                          color: backgroundDarkColor,
-                          onPressed: (){
-                            widget.swiperController.next();
-                          }
-                      ),
-                    ],
                   ),
                 ),
-              ],
             ),
-          ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  IconButton(
+                    iconSize: 28.0,
+                    icon: widget.prayer.favorited ? Icon(Icons.favorite) : Icon(Icons.favorite_border),
+                    color: Colors.red[400],
+                    onPressed: (){
+                      changeFavorite();
+                    }
+                  ),
+                  Expanded(
+                    child: SizedBox(
+                      width: 30.0,
+                    ),
+                    flex: 1,
+                  ),
+                  IconButton(
+                      icon: Icon(Icons.arrow_back),
+                      color: backgroundDarkColor,
+                      onPressed: (){
+                        widget.swiperController.previous();
+                      }
+                  ),
+                  IconButton(
+                      icon: Icon(Icons.arrow_forward),
+                      color: backgroundDarkColor,
+                      onPressed: (){
+                        widget.swiperController.next();
+                      }
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );

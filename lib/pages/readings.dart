@@ -1,6 +1,8 @@
 import 'package:fading_edge_scrollview/fading_edge_scrollview.dart';
 import 'package:flutter/material.dart';
 import 'package:orthodox_app/globals.dart';
+import 'package:flutter_fadein/flutter_fadein.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class Readings extends StatefulWidget {
@@ -16,45 +18,67 @@ class _ReadingsState extends State<Readings> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(15.0, 115.0, 15.0, 70.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Readings",
-              style: GoogleFonts.getFont(
-                'Bentham',
-                textStyle: TextStyle(
-                  color: textHighlightColor,
-                  fontSize: 45.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+    return FadeIn(
+      duration: Duration(milliseconds: 250),
+      child: Stack(
+        children: [
+          Container(
+            height: 400,
+            decoration: BoxDecoration(
+              color: navColor,
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(150)),
             ),
-            Expanded(
-              child: Scrollbar(
-                controller: scrollController,
-                isAlwaysShown: true,
-                child: FadingEdgeScrollView.fromScrollView(
-                  gradientFractionOnStart: 0.1,
-                  gradientFractionOnEnd: 0.1,
-                  child: ListView.separated(
-                    scrollDirection: Axis.vertical,
-                    controller: scrollController,
-                    padding: const EdgeInsets.all(8),
-                    itemCount: readings.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return ReadingCard(readings[index], index);
-                    },
-                    separatorBuilder: (BuildContext context, int index) => const Divider(),
+          ),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(15.0, 115.0, 15.0, 70.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Readings",
+                    style: GoogleFonts.getFont(
+                      'Bentham',
+                      textStyle: TextStyle(
+                        color: textHighlightColor,
+                        fontSize: 45.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
-                ),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  Expanded(
+                    child: Scrollbar(
+                      controller: scrollController,
+                      isAlwaysShown: true,
+                      child: FadingEdgeScrollView.fromScrollView(
+                        gradientFractionOnStart: 0.1,
+                        gradientFractionOnEnd: 0.1,
+                        child: ListView.builder(
+                          scrollDirection: Axis.vertical,
+                          controller: scrollController,
+                          padding: const EdgeInsets.all(8),
+                          itemCount: readings.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
+                              child: ReadingCard(readings[index], index),
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -74,6 +98,10 @@ class _ReadingCardState extends State<ReadingCard> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      focusColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      splashColor: Colors.transparent,
       onTap: (){
         Navigator.push(
           context,
@@ -84,57 +112,56 @@ class _ReadingCardState extends State<ReadingCard> {
         );
       },
       child: Container(
-        height: 110.0,
+        height: 115.0,
         width: 230.0,
+       color: Colors.transparent,
        child: Card(
-         elevation: 10.0,
+         elevation: 5.0,
          shape: RoundedRectangleBorder(
            borderRadius: BorderRadius.circular(15.0),
          ),
-         color: backgroundLightColor,
+         color: backgroundLightColor.withOpacity(0.95),
          child: Padding(
            padding: const EdgeInsets.all(15.0),
-           child: Flexible(
-             child: Column(
-               crossAxisAlignment: CrossAxisAlignment.start,
-               children: [
-                 Text(
-                   widget.reading.title,
+           child: Column(
+             crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+               Text(
+                 widget.reading.title,
+                 style: GoogleFonts.getFont(
+                   'Bentham',
+                   textStyle: TextStyle(
+                     color: textHighlightColor,
+                     fontSize: 25.0,
+                     letterSpacing: 1.4,
+                     fontWeight: FontWeight.bold,
+                   ),
+                 ),
+                 overflow: TextOverflow.ellipsis,
+               ),
+               Container(
+                 height: 2.0,
+                 width: 200.0,
+                 decoration: BoxDecoration(
+                   color: selectedColor,
+                   borderRadius: BorderRadius.circular(15),
+                 ),
+               ),
+               Padding(
+                 padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                 child: Text(
+                   widget.reading.subTitle=='' ? widget.reading.author : widget.reading.subTitle,
                    style: GoogleFonts.getFont(
-                     'Bentham',
+                     'Roboto Slab',
                      textStyle: TextStyle(
-                       color: textHighlightColor,
-                       fontSize: 25.0,
-                       letterSpacing: 1.4,
-                       fontWeight: FontWeight.bold,
+                       color: textColor,
+                       fontSize: 20.0,
                      ),
                    ),
                    overflow: TextOverflow.ellipsis,
                  ),
-                 Container(
-                   height: 2.0,
-                   width: 200.0,
-                   decoration: BoxDecoration(
-                     color: selectedColor,
-                     borderRadius: BorderRadius.circular(15),
-                   ),
-                 ),
-                 Padding(
-                   padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
-                   child: Text(
-                     widget.reading.subTitle,
-                     style: GoogleFonts.getFont(
-                       'Roboto Slab',
-                       textStyle: TextStyle(
-                         color: textColor,
-                         fontSize: 20.0,
-                       ),
-                     ),
-                     overflow: TextOverflow.ellipsis,
-                   ),
-                 ),
-               ],
-             ),
+               ),
+             ],
            ),
          ),
        ),
@@ -242,7 +269,8 @@ class _ReadingPageState extends State<ReadingPage> {
                               padding: const EdgeInsets.fromLTRB(0, 0, 15, 0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text(
+                                children: [
+                                  widget.reading.subTitle != '' ? Text(
                                   widget.reading.subTitle.trim(),
                                   style: GoogleFonts.getFont(
                                     'Roboto Slab',
@@ -251,10 +279,13 @@ class _ReadingPageState extends State<ReadingPage> {
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
-                                  ),
-                                ),
-                                  Container(
-                                    height: 10.0,
+                                  ), ) : Container(),
+                                  Padding(
+                                    padding: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                                    child: Container(
+                                      height: 2.0,
+                                      color: accentColor,
+                                    ),
                                   ),
                                   Text(
                                     widget.reading.author.trim(),

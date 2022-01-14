@@ -20,8 +20,8 @@ List<String> saints = [];
 String saintText = "null";
 String epistleAddr = "null";
 String gospelAddr = "null";
-Reading epistle = Reading('Today\'s Epistle','subTitle','author','text');
-Reading gospel = Reading('Today\'s Gospel','subTitle','author','text');
+Reading epistle = Reading('Today\'s Epistle','loading...','loading...','loading...');
+Reading gospel = Reading('Today\'s Gospel','loading...','loading...','loading...');
 
 
 var now;
@@ -99,17 +99,789 @@ class Reading {
 List<Reading> readings = [
   epistle,
   gospel,
-  Reading('Title','subTitle','author','asjflajd ajsdlbjfas dbfadjlbfal djlfadjseucbe ablcebal djhafluebcjda dbclauehlfakdjbs fdblajchbdlab dlfelufhla b djlcjdbla lsudhflueadb cbdlajbdlkjs ueflbuadl acdjabdljfaldbf euflhaudblc djlablsuehluflakjsb d cbjdlbaksjlduehfula bcdjaljsdlfkeuga bcjdlag fue cbdjlajljdlf eguald cjdlajdbflauef  djalfujdbfljdalkuegfl adjbcdljafglegfbanx mb,ahbdlcaudhlfad fe albjxbv,dj asijbdla sldjbf aljsbdlf jaksblkdjblkjlbkjblka bcxb,znb,ncb uwal kjdsba nxb,cznjcblvkaldkjafbl dbaljdlfbakjeb cjxlczblvkdblksj adbljafkbseuhg bjlbjdalkjxbcl aluealebclajdbclakjdbal jdb lcuakdblaueblufbeidbcalkjcbd alkjdblkajbdflkfualubfakljdbclkjab dkjblckajbdluaeblaubdlca abdjlcbalkjdbclkuealbudjlab cbdjlabdljalbeucbla bjlcbdlkjableubclkjdb bclkjdbakljbdlkuabeubc bdljablbleub cbljdbalueb'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
-  Reading('Title','subTitle','author','text'),
+  Reading('Paschal Homily','The Paschal homily of St John Chrysostom is read aloud in every Orthodox parish in the post-midnight Easter Liturgy.','St. John Chrysostom', '''
+      
+      If any man be devout and loveth God, let him enjoy this fair and radiant triumphal feast!
+      If any man be a wise servant, let him rejoicing enter into the joy of his Lord.
+      If any have laboured long in fasting, let him how receive his recompense.
+      If any have wrought from the first hour, let him today receive his just reward.
+      If any have come at the third hour, let him with thankfulness keep the feast.
+      If any have arrived at the sixth hour, let him have no misgivings; Because he shall in nowise be deprived therefore.
+      If any have delayed until the ninth hour, let him draw near, fearing nothing.
+      And if any have tarried even until the eleventh hour, let him, also, be not alarmed at his tardiness.
+
+      For the Lord, who is jealous of his honour, will accept the last even as the first.
+      He giveth rest unto him who cometh at the eleventh hour, even as unto him who hath wrought from the first hour.
+
+      And He showeth mercy upon the last, and careth for the first; And to the one He giveth, and upon the other He bestoweth gifts.
+      And He both accepteth the deeds, and welcometh the intention, and honoureth the acts and praises the offering.
+
+      Wherefore, enter ye all into the joy of your Lord.
+      Receive your reward, both the first, and likewise the second.
+      You rich and poor together, hold high festival!
+      You sober and you heedless, honour the day!
+      Rejoice today, both you who have fasted and you who have disregarded the fast.
+      The table is full-laden; feast ye all sumptuously.
+      The calf is fatted; let no one go hungry away.
+      Enjoy ye all the feast of faith: receive ye all the riches of loving-kindness.
+
+      Let no one bewail his poverty, for the universal Kingdom has been revealed.
+      Let no one weep for his iniquities, for pardon has shown forth from the grave.
+      Let no one fear death, for the Saviour's death has set us free.
+      He that was held prisoner of it has annihilated it.
+
+      By descending into Hell, He made Hell captive.
+      He embittered it when it tasted of His flesh.
+      And Isaiah, foretelling this, did cry: Hell, said he, was embittered when it encountered Thee in the lower regions.
+
+      It was embittered, for it was abolished.
+      It was embittered, for it was mocked.
+      It was embittered, for it was slain.
+      It was embittered, for it was overthrown.
+      It was embittered, for it was fettered in chains.
+      It took a body, and met God face to face.
+      It took earth, and encountered Heaven.
+      It took that which it saw, and fell upon that which cannot be seen.
+
+      O Death, where is thy sting?
+      O Hell, where is thy victory?
+
+      Christ is risen, and thou art overthrown!
+      Christ is risen, and the demons are fallen!
+      Christ is risen, and the angels rejoice!
+      Christ is risen, and life reigns!
+      Christ is risen, and not one dead remains in the grave.
+      For Christ, being risen from the dead, is become the first-fruits of those who have fallen asleep.
+
+      To Him be glory and dominion unto ages of ages.
+      Amen.'''),
+  Reading('The Blessings of Death','','St. John Chrysostom', '''Believe me, I am ashamed and blush to see unbecoming groups of women pass along the mart, tearing their hair, cutting their arms and cheeks, and all this under the eyes of the Greeks. For what will they not say? What will they not utter concerning us? Are these the men who philosophize about a resurrection? Indeed! How poorly their actions agree with their opinions! In words, they philosophize about a resurrection: but they act just like those who do not acknowledge a resurrection. If they fully believed in a resurrection, they would not act thus; if they had really persuaded themselves that a deceased friend had departed to a better state, they would not mourn. These things, and more than these, the unbelievers say when they hear those lamentations. Let us then be ashamed, and be more moderate, and not occasion so much harm to ourselves and to those who are looking on us.
+
+For on what account, tell me, do you thus weep for one departed? Because he was a bad man? You ought on that very account to be thankful, since the occasions of wickedness are now cut off. Because he was good and kind? If so, you ought to rejoice; since he has been soon removed, before wickedness had corrupted him: and he has gone away to a world where he stands ever secure, and there is no room even to mistrust a change. Because he was a youth? For that, too, praise Him who has taken him, because He has speedily called him to a better lot. Because he was an aged man? On this account, also, give thanks and glorify Him that has taken him. Be ashamed of your manner of burial. The singing of psalms, the prayers, the assembling of the [spiritual] fathers and brethren—all this is not that you may weep and lament and afflict yourselves, but that you may render thanks to Him who has taken the departed. For as when men are called to some high office multitudes with praises on their lips assemble to escort them at their departure to their stations, so do all with abundant praise join to send forward, as to greater honor, those of the pious who have departed.
+
+Death is rest; a deliverance from the exhausting labors and cares of this world. When, then, thou seest a relative departing, yield not to despondency; give thyself to reflection; examine thy conscience; cherish the thought that after a little while this end awaits thee also. Be more considerate; let another's death excite thee to salutary fear; shake off all indolence; examine your past deeds; quit your sins, and commence a happy change.
+
+We differ from unbelievers in our estimate of things. The unbeliever surveys the heavens and worships it because he thinks it a divinity; he looks to the earth and makes himself a servant to it, and longs for the things of sense. But not so with us. We survey the Heaven, and admire Him that made it; for we believe it not to be a god, but a work of God. I look on the whole creation and am led by it to the Creator. He looks on wealth and longs for it with earnest desire; I look on wealth and contemn it. He sees poverty and laments; I see poverty and rejoice. I see things in one light; he in another.
+
+Just so in regard to death. He sees a corpse and thinks of it as a corpse; I see a corpse and behold sleep rather than death. And as in regard to books, both learned persons and unlearned see them with the same eyes, but not with the same understanding—for to the unlearned the mere shapes of letters appear, while the learned discover the sense that lies within those letters; co in respect to affairs in general, we all see what takes place with the same eyes, but not with the same understanding and judgment. Since, therefore, in all other things we differ from them, shall we agree with them in our sentiments respecting death?
+
+Consider to whom the departed has gone and take comfort. He has gone where Paul is, and Peter, and the whole company of the saints. Consider how he shall arise, and with what glory and splendor!'''),
+  Reading('Salvation of the Rich Man','Who is the rich man who shall be saved?','St. Clement of Alexandria','''
+  I. Those who bestow laudatory addresses on the rich appear to me to be rightly judged not only flatterers and base, in vehemently pretending that things which are disagreeable give them pleasure, but also godless and treacherous; godless, because neglecting to praise and glorify God, who is alone perfect and good, of whom are all things, and by whom are all things, and for whom are all things, Romans 11:36 they invest with divine honours men wallowing in an execrable and abominable life, and, what is the principal thing, liable on this account to the judgment of God; and treacherous, because, although wealth is of itself sufficient to puff up and corrupt the souls of its possessors, and to turn them from the path by which salvation is to be attained, they stupefy them still more, by inflating the minds of the rich with the pleasures of extravagant praises, and by making them utterly despise all things except wealth, on account of which they are admired; bringing, as the saying is, fire to fire, pouring pride on pride, and adding conceit to wealth, a heavier burden to that which by nature is a weight, from which somewhat ought rather to be removed and taken away as being a dangerous and deadly disease. For to him who exalts and magnifies himself, the change and downfall to a low condition succeeds in turn, as the divine word teaches. For it appears to me to be far kinder, than basely to flatter the rich and praise them for what is bad, to aid them in working out their salvation in every possible way; asking this of God, who surely and sweetly bestows such things on His own children; and thus by the grace of the Saviour healing their souls, enlightening them and leading them to the attainment of the truth; and whosoever obtains this and distinguishes himself in good works shall gain the prize of everlasting life. Now prayer that runs its course till the last day of life needs a strong and tranquil soul; and the conduct of life needs a good and righteous disposition, reaching out towards all the commandments of the Saviour.
+
+II. Perhaps the reason of salvation appearing more difficult to the rich than to poor men, is not single but manifold. For some, merely hearing, and that in an off-hand way, the utterance of the Saviour, that it is easier for a camel to go through the eye of a needle than for a rich man to enter into the kingdom of heaven, Matthew 19:24 despair of themselves as not destined to live, surrender all to the world, cling to the present life as if it alone was left to them, and so diverge more from the way to the life to come, no longer inquiring either whom the Lord and Master calls rich, or how that which is impossible to man becomes possible to God. But others rightly and adequately comprehend this, but attaching slight importance to the works which tend to salvation, do not make the requisite preparation for attaining to the objects of their hope. And I affirm both of these things of the rich who have learned both the Saviour's power and His glorious salvation. With those who are ignorant of the truth I have little concern.
+
+III. Those then who are actuated by a love of the truth and love of their brethren, and neither are rudely insolent towards such rich as are called, nor, on the other hand, cringe to them for their own avaricious ends, must first by the word relieve them of their groundless despair, and show with the requisite explanation of the oracles of the Lord that the inheritance of the kingdom of heaven is not quite cut off from them if they obey the commandments; then admonish them that they entertain a causeless fear, and that the Lord gladly receives them, provided they are willing; and then, in addition, exhibit and teach how and by what deeds and dispositions they shall win the objects of hope, inasmuch as it is neither out of their reach, nor, on the other hand, attained without effort; but, as is the case with athletes — to compare things small and perishing with things great and immortal— let the man who is endowed with worldly wealth reckon that this depends on himself. For among those, one man, because he despaired of being able to conquer and gain crowns, did not give in his name for the contest; while another, whose mind was inspired with this hope, and yet did not submit to the appropriate labours, and diet, and exercises, remained uncrowned, and was balked in his expectations. So also let not the man that has been invested with worldly wealth proclaim himself excluded at the outset from the Saviour's lists, provided he is a believer and one who contemplates the greatness of God's philanthropy; nor let him, on the other hand, expect to grasp the crowns of immortality without struggle and effort, continuing untrained, and without contest. But let him go and put himself under the Word as his trainer, and Christ the President of the contest; and for his prescribed food and drink let him have the New Testament of the Lord; and for exercises, the commandments; and for elegance and ornament, the fair dispositions, love, faith, hope, knowledge of the truth, gentleness, meekness, pity, gravity: so that, when by the last trumpet the signal shall be given for the race and departure hence, as from the stadium of life, he may with a good conscience present himself victorious before the Judge who confers the rewards, confessedly worthy of the Fatherland on high, to which he returns with crowns and the acclamations of angels.
+
+IV. May the Saviour then grant to us that, having begun the subject from this point, we may contribute to the brethren what is true, and suitable, and saving, first touching the hope itself, and, second, touching the access to the hope. He indeed grants to those who beg, and teaches those who ask, and dissipates ignorance and dispels despair, by introducing again the same words about the rich, which become their own interpreters and infallible expounders. For there is nothing like listening again to the very same statements, which till now in the Gospels were distressing you, hearing them as you did without examination, and erroneously through puerility: And going forth into the way, one approached and kneeled, saying, Good Master, what good thing shall I do that I may inherit everlasting life? And Jesus says, Why do you call Me good? There is none good but one, that is, God. You know the commandments. Do not commit adultery, Do not kill, Do not steal, Do not bear false witness, Defraud not, Honour your father and your mother. And he answering says to Him, All these have I observed. And Jesus, looking upon him, loved him, and said, One thing you lack. If you would be perfect, sell what you have and give to the poor, and you shall have treasure in heaven: and come, follow Me. And he was sad at that saying, and went away grieved: for he was rich, having great possessions. And Jesus looked round about, and says to His disciples, How hardly shall they that have riches enter into the kingdom of God! And the disciples were astonished at His words. But Jesus answers again, and says unto them, Children, how hard is it for them that trust in riches to enter into the kingdom of God! More easily shall a camel enter through the eye of a needle than a rich man into the kingdom of God. And they were astonished out of measure, and said, Who then can be saved? And He, looking upon them, said, What is impossible with men is possible with God. For with God all things are possible. Peter began to say to Him, Lo, we have left all and followed You. And Jesus answered and said, Verily I say unto you, Whosoever shall leave what is his own, parents, and brethren, and possessions, for My sake and the Gospel's, shall receive an hundred-fold now in this world, lands, and possessions, and house, and brethren, with persecutions; and in the world to come is life everlasting. But many that are first shall be last, and the last first.
+
+V. These things are written in the Gospel according to Mark; and in all the rest correspondingly; although perchance the expressions vary slightly in each, yet all show identical agreement in meaning.
+
+But well knowing that the Saviour teaches nothing in a merely human way, but teaches all things to His own with divine and mystic wisdom, we must not listen to His utterances carnally; but with due investigation and intelligence must search out and learn the meaning hidden in them. For even those things which seem to have been simplified to the disciples by the Lord Himself are found to require not less, even more, attention than what is expressed enigmatically, from the surpassing superabundance of wisdom in them. And whereas the things which are thought to have been explained by Him to those within — those called by Him the children of the kingdom — require still more consideration than the things which seemed to have been expressed simply, and respecting which therefore no questions were asked by those who heard them, but which, pertaining to the entire design of salvation, and to be contemplated with admirable and supercelestial depth of mind, we must not receive superficially with our ears, but with application of the mind to the very spirit of the Saviour, and the unuttered meaning of the declaration.
+
+VI. For our Lord and Saviour was asked pleasantly a question most appropriate for Him — the Life respecting life, the Saviour respecting salvation, the Teacher respecting the chief doctrines taught, the Truth respecting the true immortality, the Word respecting the word of the Father, the Perfect respecting the perfect rest, the Immortal respecting the sure immortality. He was asked respecting those things on account of which He descended, which He inculcates, which He teaches, which He offers, in order to show the essence of the Gospel, that it is the gift of eternal life. For He foresaw as God, both what He would be asked, and what each one would answer Him. For who should do this more than the Prophet of prophets, and the Lord of every prophetic spirit? And having been called good, and taking the starting note from this first expression, He commences His teaching with this, turning the pupil to God, the good, and first and only dispenser of eternal life, which the Son, who received it of Him, gives to us.
+
+VII. Wherefore the greatest and chiefest point of the instructions which relate to life must be implanted in the soul from the beginning — to know the eternal God, the giver of what is eternal, and by knowledge and comprehension to possess God, who is first, and highest, and one, and good. For this is the immutable and immoveable source and support of life, the knowledge of God, who really is, and who bestows the things which really are, that is, those which are eternal, from whom both being and the continuance of it are derived to other beings. For ignorance of Him is death; but the knowledge and appropriation of Him, and love and likeness to Him, are the only life.
+
+VIII. He then who would live the true life is enjoined first to know Him whom no one knows, except the Son reveal (Him). Matthew 11:27 Next is to be learned the greatness of the Saviour after Him, and the newness of grace; for, according to the apostle, the law was given by Moses, grace and truth came by Jesus Christ; John 1:17 and the gifts granted through a faithful servant are not equal to those bestowed by the true Son. If then the law of Moses had been sufficient to confer eternal life, it were to no purpose for the Saviour Himself to come and suffer for us, accomplishing the course of human life from His birth to His cross; and to no purpose for him who had done all the commandments of the law from his youth to fall on his knees and beg from another immortality. For he had not only fulfilled the law, but had begun to do so from his very earliest youth. For what is there great or pre-eminently illustrious in an old age which is unproductive of faults? But if one in juvenile frolicsomeness and the fire of youth shows a mature judgment older than his years, this is a champion admirable and distinguished, and hoary pre-eminently in mind.
+
+But, nevertheless, this man being such, is perfectly persuaded that nothing is wanting to him as far as respects righteousness, but that he is entirely destitute of life. Wherefore he asks it from Him who alone is able to give it. And with reference to the law, he carries confidence; but the Son of God he addresses in supplication. He is transferred from faith to faith. As perilously tossing and occupying a dangerous anchorage in the law, he makes for the Saviour to find a haven.
+
+IX. Jesus, accordingly, does not charge him with not having fulfilled all things out of the law, but loves him, and fondly welcomes his obedience in what he had learned; but says that he is not perfect as respects eternal life, inasmuch as he had not fulfilled what is perfect, and that he is a doer indeed of the law, but idle at the true life. Those things, indeed, are good. Who denies it? For the commandment is holy, Romans 7:12 as far as a sort of training with fear and preparatory discipline goes, leading as it did to the culmination of legislation and to grace. Galatians 3:24 But Christ is the fulfilment of the law for righteousness to every one that believes; and not as a slave making slaves, but sons, and brethren, and fellow-heirs, who perform the Father's will.
+
+X. If you will be perfect. Matthew 19:21 Consequently he was not yet perfect. For nothing is more perfect than what is perfect. And divinely the expression if you will showed the self-determination of the soul holding converse with Him. For choice depended on the man as being free; but the gift on God as the Lord. And He gives to those who are willing and are exceedingly earnest, and ask, that so their salvation may become their own. For God compels not (for compulsion is repugnant to God), but supplies to those who seek, and bestows on those who ask, and opens to those who knock. If you will, then, if you really will, and art not deceiving yourself, acquire what you lack. One thing is lacking you — the one thing which abides, the good, that which is now above the law, which the law gives not, which the law contains not, which is the prerogative of those who live. He forsooth who had fulfilled all the demands of the law from his youth, and had gloried in what was magnificent, was not able to complete the whole with this one thing which was specially required by the Saviour, so as to receive the eternal life which he desired. But he departed displeased, vexed at the commandment of the life, on account of which he supplicated. For he did not truly wish life, as he averred, but aimed at the mere reputation of the good choice. And he was capable of busying himself about many things; but the one thing, the work of life, he was powerless, and disinclined, and unable to accomplish. Such also was what the Lord said to Martha, who was occupied with many things, and distracted and troubled with serving; while she blamed her sister, because, leaving serving, she set herself at His feet, devoting her time to learning: You are troubled about many things, but Mary has chosen the good part, which shall not be taken away from her. Luke 10:41-42 So also He bade him leave his busy life, and cleave to One and adhere to the grace of Him who offered everlasting life.
+
+XI. What then was it which persuaded him to flight, and made him depart from the Master, from the entreaty, the hope, the life, previously pursued with ardour? — Sell your possessions. And what is this? He does not, as some conceive off-hand, bid him throw away the substance he possessed, and abandon his property; but bids him banish from his soul his notions about wealth, his excitement and morbid feeling about it, the anxieties, which are the thorns of existence, which choke the seed of life. For it is no great thing or desirable to be destitute of wealth, if without a special object — not except on account of life. For thus those who have nothing at all, but are destitute, and beggars for their daily bread, the poor dispersed on the streets, who know not God and God's righteousness, simply on account of their extreme want and destitution of subsistence, and lack even of the smallest things, were most blessed and most dear to God, and sole possessors of everlasting life.
+
+Nor was the renunciation of wealth and the bestowment of it on the poor or needy a new thing; for many did so before the Saviour's advent, — some because of the leisure (thereby obtained) for learning, and on account of a dead wisdom; and others for empty fame and vainglory, as the Anaxagorases, the Democriti, and the Crateses.
+
+XII. Why then command as new, as divine, as alone life-giving, what did not save those of former days? And what peculiar thing is it that the new creature the Son of God intimates and teaches? It is not the outward act which others have done, but something else indicated by it, greater, more godlike, more perfect, the stripping off of the passions from the soul itself and from the disposition, and the cutting up by the roots and casting out of what is alien to the mind. For this is the lesson peculiar to the believer, and the instruction worthy of the Saviour. For those who formerly despised external things relinquished and squandered their property, but the passions of the soul, I believe, they intensified. For they indulged in arrogance, pretension, and vainglory, and in contempt of the rest of mankind, as if they had done something superhuman. How then would the Saviour have enjoined on those destined to live for ever what was injurious and hurtful with reference to the life which He promised? For although such is the case, one, after ridding himself of the burden of wealth, may none the less have still the lust and desire for money innate and living; and may have abandoned the use of it, but being at once destitute of and desiring what he spent, may doubly grieve both on account of the absence of attendance, and the presence of regret. For it is impossible and inconceivable that those in want of the necessaries of life should not be harassed in mind, and hindered from better things in the endeavour to provide them somehow, and from some source.
+
+XIII. And how much more beneficial the opposite case, for a man, through possessing a competency, both not himself to be in straits about money, and also to give assistance to those to whom it is requisite so to do! For if no one had anything, what room would be left among men for giving? And how can this dogma fail to be found plainly opposed to and conflicting with many other excellent teachings of the Lord? Make to yourselves friends of the mammon of unrighteousness, that when you fail, they may receive you into the everlasting habitations. Luke 16:9 Acquire treasures in heaven, where neither moth nor rust destroys, nor thieves break through. Matthew 6:19 How could one give food to the hungry, and drink to the thirsty, clothe the naked, and shelter the houseless, for not doing which He threatens with fire and the outer darkness, if each man first divested himself of all these things? Nay, He bids Zaccheus and Matthew, the rich tax-gathers, entertain Him hospitably. And He does not bid them part with their property, but, applying the just and removing the unjust judgment, He subjoins, Today salvation has come to this house, forasmuch as he also is a son of Abraham. He so praises the use of property as to enjoin, along with this addition, the giving a share of it, to give drink to the thirsty, bread to the hungry, to take the houseless in, and clothe the naked. But if it is not possible to supply those needs without substance, and He bids people abandon their substance, what else would the Lord be doing than exhorting to give and not to give the same things, to feed and not to feed, to take in and to shut out, to share and not to share? Which were the most irrational of all things.
+
+XIV. Riches, then, which benefit also our neighbours, are not to be thrown away. For they are possessions, inasmuch as they are possessed, and goods, inasmuch as they are useful and provided by God for the use of men; and they lie to our hand, and are put under our power, as material and instruments which are for good use to those who know the instrument. If you use it skilfully, it is skilful; if you are deficient in skill, it is affected by your want of skill, being itself destitute of blame. Such an instrument is wealth. Are you able to make a right use of it? It is subservient to righteousness. Does one make a wrong use of it? It is, on the other hand, a minister of wrong. For its nature is to be subservient, not to rule. That then which of itself has neither good nor evil, being blameless, ought not to be blamed; but that which has the power of using it well and ill, by reason of its possessing voluntary choice. And this is the mind and judgment of man, which has freedom in itself and self-determination in the treatment of what is assigned to it. So let no man destroy wealth, rather than the passions of the soul, which are incompatible with the better use of wealth. So that, becoming virtuous and good, he may be able to make a good use of these riches. The renunciation, then, and selling of all possessions, is to be understood as spoken of the passions of the soul.
+
+XV. I would then say this. Since some things are within and some without the soul, and if the soul make a good use of them, they also are reputed good, but if a bad, bad — whether does He who commands us to alienate our possessions repudiate those things, after the removal of which the passions still remain, or those rather, on the removal of which wealth even becomes beneficial? If therefore he who casts away worldly wealth can still be rich in the passions, even though the material [for their gratification] is absent — for the disposition produces its own effects, and strangles the reason, and presses it down and inflames it with its inbred lusts — it is then of no advantage to him to be poor in purse while he is rich in passions. For it is not what ought to be cast away that he has cast away, but what is indifferent; and he has deprived himself of what is serviceable, but set on fire the innate fuel of evil through want of the external means [of gratification]. We must therefore renounce those possessions that are injurious, not those that are capable of being serviceable, if one knows the right use of them. And what is managed with wisdom, and sobriety, and piety, is profitable; and what is hurtful must be cast away. But things external hurt not. So then the Lord introduces the use of external things, bidding us put away not the means of subsistence, but what uses them badly. And these are the infirmities and passions of the soul.
+
+XVI. The presence of wealth in these is deadly to all, the loss of it salutary. Of which, making the soul pure — that is, poor and bare — we must hear the Saviour speaking thus, Come, follow Me. For to the pure in heart He now becomes the way. But into the impure soul the grace of God finds no entrance. And that (soul) is unclean which is rich in lusts, and is in the throes of many worldly affections. For he who holds possessions, and gold, and silver, and houses, as the gifts of God; and ministers from them to the God who gives them for the salvation of men; and knows that he possesses them more for the sake of the brethren than his own; and is superior to the possession of them, not the slave of the things he possesses; and does not carry them about in his soul, nor bind and circumscribe his life within them, but is ever labouring at some good and divine work, even should he be necessarily some time or other deprived of them, is able with cheerful mind to bear their removal equally with their abundance. This is he who is blessed by the Lord, and called poor in spirit, a meet heir of the kingdom of heaven, not one who could not live rich.
+
+XVII. But he who carries his riches in his soul, and instead of God's Spirit bears in his heart gold or land, and is always acquiring possessions without end, and is perpetually on the outlook for more, bending downwards and fettered in the toils of the world, being earth and destined to depart to earth — whence can he be able to desire and to mind the kingdom of heaven — a man who carries not a heart, but land or metal, who must perforce be found in the midst of the objects he has chosen? For where the mind of man is, there is also his treasure. The Lord acknowledges a twofold treasure — the good: For the good man, out of the good treasure of his heart, brings forth good; and the evil: for the evil man, out of the evil treasure, brings forth evil: for out of the abundance of the heart the mouth speaks. Matthew 12:34-35 As then treasure is not one with Him, as also it is with us, that which gives the unexpected great gain in the finding, but also a second, which is profitless and undesirable, an evil acquisition, hurtful; so also there is a richness in good things, and a richness in bad things, since we know that riches and treasure are not by nature separated from each other. And the one sort of riches is to be possessed and acquired, and the other not to be possessed, but to be cast away.
+
+In the same way spiritual poverty is blessed. Wherefore also Matthew added, Blessed are the poor. Matthew 5:3 How? In spirit. And again, Blessed are they that hunger and thirst after the righteousness of God. Matthew 5:6 Wherefore wretched are the contrary kind of poor, who have no part in God, and still less in human property, and have not tasted of the righteousness of God.
+
+XVIII. So that (the expression) rich men that shall with difficulty enter into the kingdom, is to be apprehended in a scholarly way, not awkwardly, or rustically, or carnally. For if the expression is used thus, salvation does not depend on external things, whether they be many or few, small or great, or illustrious or obscure, or esteemed or disesteemed; but on the virtue of the soul, on faith, and hope, and love, and brotherliness, and knowledge, and meekness, and humility, and truth, the reward of which is salvation. For it is not on account of comeliness of body that any one shall live, or, on the other hand, perish. But he who uses the body given to him chastely and according to God, shall live; and he that destroys the temple of God shall be destroyed. An ugly man can be profligate, and a good-looking man temperate. Neither strength and great size of body makes alive, nor does any of the members destroy. But the soul which uses them provides the cause for each. Bear then, it is said, when struck on the face; Matthew 5:39 which a man strong and in good health can obey. And again, a man who is feeble may transgress from refractoriness of temper. So also a poor and destitute man may be found intoxicated with lusts; and a man rich in worldly goods temperate, poor in indulgences, trustworthy, intelligent, pure, chastened.
+
+If then it is the soul which, first and especially, is that which is to live, and if virtue springing up around it saves, and vice kills; then it is clearly manifest that by being poor in those things, by riches of which one destroys it, it is saved, and by being rich in those things, riches of which ruin it, it is killed. And let us no longer seek the cause of the issue elsewhere than in the state and disposition of the soul in respect of obedience to God and purity, and in respect of transgression of the commandments and accumulation of wickedness.
+
+XIX. He then is truly and rightly rich who is rich in virtue, and is capable of making a holy and faithful use of any fortune; while he is spuriously rich who is rich, according to the flesh, and turns life into outward possession, which is transitory and perishing, and now belongs to one, now to another, and in the end to nobody at all. Again, in the same way there is a genuine poor man, and another counterfeit and falsely so called. He that is poor in spirit, and that is the right thing, and he that is poor in a worldly sense, which is a different thing. To him who is poor in worldly goods, but rich in vices, who is not poor in spirit and rich toward God, it is said, Abandon the alien possessions that are in your soul, that, becoming pure in heart, you may see God; which is another way of saying, Enter into the kingdom of heaven. And how may you abandon them? By selling them. What then? Are you to take money for effects, by effecting an exchange of riches, by turning your visible substance into money? Not at all. But by introducing, instead of what was formerly inherent in your soul, which you desire to save, other riches which deify and which minister everlasting life, dispositions in accordance with the command of God; for which there shall accrue to you endless reward and honour, and salvation, and everlasting immortality. It is thus that you rightly sell the possessions, many are superfluous, which shut the heavens against you by exchanging them for those which are able to save. Let the former be possessed by the carnal poor, who are destitute of the latter. But you, by receiving instead spiritual wealth, shall have now treasure in the heavens.
+
+XX. The wealthy and legally correct man, not understanding these things figuratively, nor how the same man can be both poor and rich, and have wealth and not have it, and use the world and not use it, went away sad and downcast, leaving the state of life, which he was able merely to desire but not to attain, making for himself the difficult impossible. For it was difficult for the soul not to be seduced and ruined by the luxuries and flowery enchantments that beset remarkable wealth; but it was not impossible, even surrounded with it, for one to lay hold of salvation, provided he withdrew himself from material wealth — to that which is grasped by the mind and taught by God, and learned to use things indifferent rightly and properly, and so as to strive after eternal life. And the disciples even themselves were at first alarmed and amazed. Why were they so on hearing this? Was it that they themselves possessed much wealth? Nay, they had long ago left their very nets, and hooks, and rowing boats, which were their sole possessions. Why then do they say in consternation, Who can be saved? They had heard well and like disciples what was spoken in parable and obscurely by the Lord, and perceived the depth of the words. For they were sanguine of salvation on the ground of their want of wealth. But when they became conscious of not having yet wholly renounced the passions (for they were neophytes and recently selected by the Saviour), they were excessively astonished, and despaired of themselves no less than that rich man who clung so terribly to the wealth which he preferred to eternal life. It was therefore a fit subject for all fear on the disciples' part; if both he that possesses wealth and he that is teeming with passions were the rich, and these alike shall be expelled from the heavens. For salvation is the privilege of pure and passionless souls.
+
+XXI. But the Lord replies, Because what is impossible with men is possible with God. This again is full of great wisdom. For a man by himself working and toiling at freedom from passion achieves nothing. But if he plainly shows himself very desirous and earnest about this, he attains it by the addition of the power of God. For God conspires with willing souls. But if they abandon their eagerness, the spirit which is bestowed by God is also restrained. For to save the unwilling is the part of one exercising compulsion; but to save the willing, that of one showing grace. Nor does the kingdom of heaven belong to sleepers and sluggards, but the violent take it by force. For this alone is commendable violence, to force God, and take life from God by force. And He, knowing those who persevere firmly, or rather violently, yields and grants. For God delights in being vanquished in such things.
+
+Therefore on hearing those words, the blessed Peter, the chosen, the pre-eminent, the first of the disciples, for whom alone and Himself the Saviour paid tribute, Matthew 17:27 quickly seized and comprehended the saying. And what does he say? Lo, we have left all and followed You. Now if by all he means his own property, he boasts of leaving four oboli perhaps in all, and forgets to show the kingdom of heaven to be their recompense. But if, casting away what we were now speaking of, the old mental possessions and soul diseases, they follow in the Master's footsteps, this now joins them to those who are to be enrolled in the heavens. For it is thus that one truly follows the Saviour, by aiming at sinlessness and at His perfection, and adorning and composing the soul before it as a mirror, and arranging everything in all respects similarly.
+
+XXII. And Jesus answering said, Verily I say unto you, Whosoever shall leave what is his own, parents, and children, and wealth, for My sake and the Gospel's, shall receive an hundredfold. But let neither this trouble you, nor the still harder saying delivered in another place in the words, Whoever hates not father, and mother, and children, and his own life besides, cannot be My disciple. Luke 14:26 For the God of peace, who also exhorts to love enemies, does not introduce hatred and dissolution from those that are dearest. But if we are to love our enemies, it is in accordance with right reason that, ascending from them, we should love also those nearest in kindred. Or if we are to hate our blood-relations, deduction teaches us that much more are we to spurn from us our enemies. So that the reasonings would be shown to destroy one another. But they do not destroy each other, nor are they near doing so. For from the same feeling and disposition, and on the ground of the same rule, one loving his enemy may hate his father, inasmuch as he neither takes vengeance on an enemy, nor reverences a father more than Christ. For by the one word he extirpates hatred and injury, and by the other shamefacedness towards one's relations, if it is detrimental to salvation. If then one's father, or son, or brother, be godless, and become a hindrance to faith and an impediment to the higher life, let him not be friends or agree with him, but on account of the spiritual enmity, let him dissolve the fleshly relationship.
+
+XXIII. Suppose the matter to be a law-suit. Let your father be imagined to present himself to you and say, I begot and reared you. Follow me, and join with me in wickedness, and obey not the law of Christ; and whatever a man who is a blasphemer and dead by nature would say.
+
+But on the other side hear the Saviour: I regenerated you, who were ill born by the world to death. I emancipated, healed, ransomed you. I will show you the face of the good Father God. Call no man your father on earth. Let the dead bury the dead; but follow Me. For I will bring you to a rest of ineffable and unutterable blessings, which eye has not seen, nor ear heard, nor have entered into the heart of men; into which angels desire to look, and see what good things God has prepared for the saints and the children who love Him. 1 Corinthians 2:9; 1 Peter 1:12 I am He who feeds you, giving Myself as bread, of which he who has tasted experiences death no more, and supplying day by day the drink of immortality. I am teacher of supercelestial lessons. For you I contended with Death, and paid your death, which you owed for your former sins and your unbelief towards God.
+
+Having heard these considerations on both sides, decide for yourself and give your vote for your own salvation. Should a brother say the like, should a child, should a wife, should any one whosoever, in preference to all let Christ in you be conqueror. For He contends in your behalf.
+
+XXIV. You may even go against wealth. Say, Certainly Christ does not debar me from property. The Lord does not envy. But do you see yourself overcome and overthrown by it? Leave it, throw it away, hate, renounce, flee. Even if your right eye offend you, quickly cut it out. Matthew 5:9 Better is the kingdom of God to a man with one eye, than the fire to one who is unmutilated. Whether hand, or foot, or soul, hate it. For if it is destroyed here for Christ's sake, it will be restored to life yonder.
+
+XXV. And to this effect similarly is what follows. Now at this present time not to have lands, and money, and houses, and brethren, with persecutions. For it is neither penniless, nor homeless, nor brotherless people that the Lord calls to life, since He has also called rich people; but, as we have said above, also brothers, as Peter with Andrew, and James with John the sons of Zebedee, but of one mind with each other and Christ. And the expression with persecutions rejects the possessing of each of those things. There is a persecution which arises from without, from men assailing the faithful, either out of hatred, or envy, or avarice, or through diabolic agency. But the most painful is internal persecution, which proceeds from each man's own soul being vexed by impious lusts, and diverse pleasures, and base hopes, and destructive dreams; when, always grasping at more, and maddened by brutish loves, and inflamed by the passions which beset it like goads and stings, it is covered with blood, (to drive it on) to insane pursuits, and to despair of life, and to contempt of God.
+
+More grievous and painful is this persecution, which arises from within, which is ever with a man, and which the persecuted cannot escape; for he carries the enemy about everywhere in himself. Thus also burning which attacks from without works trial, but that from within produces death. War also made on one is easily put an end to, but that which is in the soul continues till death.
+
+With such persecution, if you have worldly wealth, if you have brothers allied by blood and other pledges, abandon the whole wealth of these which leads to evil; procure peace for yourself, free yourself from protracted persecutions; turn from them to the Gospel; choose before all the Saviour and Advocate and Paraclete of your soul, the Prince of life. For the things which are seen are temporary; but the things which are not seen are eternal. 2 Corinthians 4:18 And in the present time are things evanescent and insecure, but in that to come is eternal life.
+
+XXVI. The first shall be last, and the last first. Mark 10:31 This is fruitful in meaning and exposition, but does not demand investigation at present; for it refers not only to the wealthy alone, but plainly to all men, who have once surrendered themselves to faith. So let this stand aside for the present. But I think that our proposition has been demonstrated in no way inferior to what we promised, that the Saviour by no means has excluded the rich on account of wealth itself, and the possession of property, nor fenced off salvation against them; if they are able and willing to submit their life to God's commandments, and prefer them to transitory objects, and if they would look to the Lord with steady eye, as those who look for the nod of a good helmsman, what he wishes, what he orders, what he indicates, what signal he gives his mariners, where and whence he directs the ship's course. For what harm does one do, who, previous to faith, by applying his mind and by saving has collected a competency? Or what is much less reprehensible than this, if at once by God, who gave him his life, he has had his home given him in the house of such men, among wealthy people, powerful in substance, and pre-eminent in opulence? For if, in consequence of his involuntary birth in wealth, a man is banished from life, rather is he wronged by God, who created him, in having vouchsafed to him temporary enjoyment, and in being deprived of eternal life. And why should wealth have ever sprung from the earth at all, if it is the author and patron of death?
+
+But if one is able in the midst of wealth to turn from its power, and to entertain moderate sentiments, and to exercise self-command, and to seek God alone, and to breathe God and walk with God, such a poor man submits to the commandments, being free, unsubdued, free of disease, unwounded by wealth. But if not, sooner shall a camel enter through a needle's eye, than such a rich man reach the kingdom of God. Mark 10:25
+
+Let then the camel, going through a narrow and strait way before the rich man, signify something loftier; which mystery of the Saviour is to be learned in the Exposition of first Principles and of Theology.
+
+XXVII. Well, first let the point of the parable, which is evident, and the reason why it is spoken, be presented. Let it teach the prosperous that they are not to neglect their own salvation, as if they had been already fore-doomed, nor, on the other hand, to cast wealth into the sea, or condemn it as a traitor and an enemy to life, but learn in what way and how to use wealth and obtain life. For since neither does one perish by any means by fearing because he is rich, nor is by any means saved by trusting and believing that he shall be saved, come let them look what hope the Saviour assigns them, and how what is unexpected may become ratified, and what is hoped for may come into possession.
+
+The Master accordingly, when asked, Which is the greatest of the commandments? says, You shall love the Lord your God with all your soul, and with all your strength; Matthew 22:36-38 that no commandment is greater than this (He says), and with exceeding good reason; for it gives command respecting the First and the Greatest, God Himself, our Father, by whom all things were brought into being, and exist, and to whom what is saved returns again. By Him, then, being loved beforehand, and having received existence, it is impious for us to regard anything else older or more excellent; rendering only this small tribute of gratitude for the greatest benefits; and being unable to imagine anything else whatever by way of recompense to God, who needs nothing and is perfect; and gaining immortality by the very exercise of loving the Father to the extent of one's might and power. For the more one loves God, the more he enters within God.
+
+XXVIII. The second in order, and not any less than this, He says, is, You shall love your neighbour as yourself, Matthew 22:39 consequently God above yourself. And on His interlocutor inquiring, Who is my neighbour? Luke 10:29 He did not, in the same way with the Jews, specify the blood-relation, or the fellow-citizen, or the proselyte, or him that had been similarly circumcised, or the man who uses one and the same law. But He introduces one on his way down from the upland region from Jerusalem to Jericho, and represents him stabbed by robbers, cast half-dead on the way, passed by the priest, looked sideways at by the Levite, but pitied by the vilified and excommunicated Samaritan; who did not, like those, pass casually, but came provided with such things as the man in danger required, such as oil, bandages, a beast of burden, money for the inn-keeper, part given now, and part promised. Which, said He, of them was neighbour to him that suffered these things? and on his answering, He that showed mercy to him, (replied), Luke 10:36-37 Go also, therefore, and do likewise, since love buds into well-doing.
+
+XXIX. In both the commandments, then, He introduces love; but in order distinguishes it. And in the one He assigns to God the first part of love, and allots the second to our neighbour. Who else can it be but the Saviour Himself? Or who more than He has pitied us, who by the rulers of darkness were all but put to death with many wounds, fears, lusts, passions, pains, deceits, pleasures? Of these wounds the only physician is Jesus, who cuts out the passions thoroughly by the root — not as the law does the bare effects, the fruits of evil plants, but applies His axe to the roots of wickedness. He it is that poured wine on our wounded souls (the blood of David's vine), that brought the oil which flows from the compassions of the Father, and bestowed it copiously. He it is that produced the ligatures of health and of salvation that cannot be undone — Love, Faith, Hope. He it is that subjected angels, and principalities, and powers, for a great reward to serve us. For they also shall be delivered from the vanity of the world through the revelation of the glory of the sons of God. We are therefore to love Him equally with God. And he loves Christ Jesus who does His will and keeps His commandments. For not every one that says unto Me, Lord, Lord, shall enter into the kingdom of heaven; but he that does the will of My Father. Matthew 7:21 And Why do you call Me Lord, Lord, and do not the things which I say? Luke 6:46 And blessed are you who see and hear what neither righteous men nor prophets (have seen or heard), Matthew 13:16-17 if you do what I say.
+
+XXX. He then is first who loves Christ; and second, he who loves and cares for those who have believed on Him. For whatever is done to a disciple, the Lord accepts as done to Himself, and reckons the whole as His. Come, you blessed of My Father, inherit the kingdom prepared for you from the foundation of the world. For I was an hungered, and you gave Me to eat: I was thirsty, and you gave Me to drink: and I was a stranger, and you took Me in: I was naked and you clothed Me: I was sick, and you visited Me: I was in prison, and you came to Me. Then shall the righteous answer, saying, Lord, when saw we You hungry, and fed You? Or thirsty, and gave You drink? And when saw we You a stranger, and took You in? Or naked, and clothed You? Or when saw we You sick, and visited You? Or in prison, and came to You? And the King answering, shall say to them, Verily I say unto you, inasmuch as you have done it unto one of the least of these My brethren, you have done it unto Me.
+
+Again, on the opposite side, to those who have not performed these things, Verily I say unto you, inasmuch as you have not done it unto one of the least of these, you have not done it to Me. And in another place, He that receives you; receives Me; and he that receives not you, rejects Me. Matthew 10:40; Luke 10:16
+
+XXXI. Such He names children, and sons, and little children, and friends, and little ones here, in reference to their future greatness above. Despise not, He says, one of these little ones; for their angels always behold the face of My Father in heaven. Matthew 18:10 And in another place, Fear not, little flock, for it is your Father's good pleasure to give you the kingdom of heaven. Luke 12:32 Similarly also He says that the least in the kingdom of heaven that is His own disciple is greater than John, the greatest among those born of women. Matthew 11:11 And again, He that receives a righteous man or a prophet in the name of a righteous man or a prophet, shall receive their reward; and he that gives to a disciple in the name of a disciple a cup of cold water to drink, shall not lose his reward. Matthew 10:41 Wherefore this is the only reward that is not lost. And again, Make to you friends of the mammon of unrighteousness, that, when you fail, they may receive you into everlasting habitations; Luke 16:9 showing that by nature all property which a man possesses in his own power is not his own. And from this unrighteousness it is permitted to work a righteous and saving thing, to refresh some one of those who have an everlasting habitation with the Father.
+
+See then, first, that He has not commanded you to be solicited or to wait to be importuned, but yourself to seek those who are to be benefited and are worthy disciples of the Saviour. Excellent, accordingly, also is the apostle's saying, For the Lord loves a cheerful giver; 2 Corinthians 9:7 who delights in giving, and spares not, sowing so that he may also thus reap, without murmuring, and disputing, and regret, and communicating, which is pure beneficence. But better than this is the saying spoken by the Lord in another place, Give to every one that asks you. Luke 6:30 For truly such is God's delight in giving. And this saying is above all divinity, — not to wait to be asked, but to inquire oneself who deserves to receive kindness.
+
+XXXII. Then to appoint such a reward for liberality, — an everlasting habitation! O excellent trading! O divine merchandise! One purchases immortality for money; and, by giving the perishing things of the world, receives in exchange for these an eternal mansion in the heavens! Sail to this mart, if you are wise, O rich man! If need be, sail round the whole world. Spare not perils and toils, that you may purchase here the heavenly kingdom. Why do transparent stones and emeralds delight you so much, and a house that is fuel for fire, or a plaything of time, or the sport of the earthquake, or an occasion for a tyrant's outrage? Aspire to dwell in the heavens, and to reign with God. This kingdom a man imitating God will give you. By receiving a little here, there through all ages He will make you a dweller with Him. Ask that you may receive; haste; strive; fear lest He disgrace you. For He is not commanded to receive, but you to give. The Lord did not say, Give, or bring, or do good, or help, but make a friend. But a friend proves himself such not by one gift, but by long intimacy. For it is neither the faith, nor the love, nor the hope, nor the endurance of one day, but he that endures to the end shall be saved. Matthew 10:22
+
+XXXIII. How then does man give these things? For I will give not only to friends, but to the friends of friends. And who is it that is the friend of God? Do not you judge who is worthy or who is unworthy. For it is possible you may be mistaken in your opinion. As in the uncertainty of ignorance it is better to do good to the undeserving for the sake of the deserving, than by guarding against those that are less good to fail to meet in with the good. For though sparing, and aiming at testing, who will receive meritoriously or not, it is possible for you to neglect some that are loved by God; the penalty for which is the punishment of eternal fire. But by offering to all in turn that need, you must of necessity by all means find some one of those who have power with God to save. Judge not, then, that you be not judged. With what measure you measure, it shall be measured to you again; Matthew 7:1-2; Luke 6:37-38 good measure, pressed and shaken, and running over, shall be given to you. Open your compassion to all who are enrolled the disciples of God; not looking contemptuously to personal appearance, nor carelessly disposed to any period of life. Nor if one appears penniless, or ragged, or ugly, or feeble, do you fret in soul at this and turn away. This form is cast around us from without, the occasion of our entrance into this world, that we may be able to enter into this common school. But within dwells the hidden Father, and His Son, who died for us and rose with us.
+
+XXXIV. This visible appearance cheats death and the devil; for the wealth within, the beauty, is unseen by them. And they rave about the carcass, which they despise as weak, being blind to the wealth within; knowing not what a treasure in an earthen vessel 2 Corinthians 4:7 we bear, protected as it is by the power of God the Father, and the blood of God the Son, and the dew of the Holy Spirit. But be not deceived, you who has tasted of the truth, and been reckoned worthy of the great redemption. But contrary to what is the case with the rest of men, collect for yourself an unarmed, an unwarlike, a bloodless, a passionless, a stainless host, pious old men, orphans dear to God, widows armed with meekness, men, adorned with love. Obtain with your money such guards, for body and for soul, for whose sake a sinking ship is made buoyant, when steered by the prayers of the saints alone; and disease at its height is subdued, put to flight by the laying on of hands; and the attack of robbers is disarmed, spoiled by pious prayers; and the might of demons is crushed, put to shame in its operations by strenuous commands.
+
+XXXV. All these warriors and guards are trusty. No one is idle, no one is useless. One can obtain your pardon from God, another comfort you when sick, another weep and groan in sympathy for you to the Lord of all, another teach some of the things useful for salvation, another admonish with confidence, another counsel with kindness. And all can love truly, without guile, without fear, without hypocrisy, without flattery, without pretence. O sweet service of loving [souls]! O blessed thoughts of confident [hearts]! O sincere faith of those who fear God alone! O truth of words with those who cannot lie! O beauty of deeds with those who have been commissioned to serve God, to persuade God, to please God, not to touch your flesh! To speak, but to the King of eternity dwelling in you.
+
+XXXVI. All the faithful, then, are good and godlike, and worthy of the name by which they are encircled as with a diadem. There are, besides, some, the elect of the elect, and so much more or less distinguished by drawing themselves, like ships to the strand, out of the surge of the world and bringing themselves to safety; not wishing to seem holy, and ashamed if one call them so; hiding in the depth of their mind the ineffable mysteries, and disdaining to let their nobleness be seen in the world; whom the Word calls the light of the world, and the salt of the earth. Matthew 5:13-14 This is the seed, the image and likeness of God, and His true son and heir, sent here as it were on a sojourn, by the high administration and suitable arrangement of the Father, by whom the visible and invisible things of the world were created; some for their service, some for their discipline, some for their instruction; and all things are held together so long as the seed remains here; and when it is gathered, these things shall be very quickly dissolved.
+
+XXXVII. For what further need has God of the mysteries of love? And then you shall look into the bosom of the Father, whom God the only-begotten Son alone has declared. And God Himself is love; and out of love to us became feminine. In His ineffable essence He is Father; in His compassion to us He became Mother. The Father by loving became feminine: and the great proof of this is He whom He begot of Himself; and the fruit brought forth by love is love.
+
+For this also He came down. For this He clothed Himself with man. For this He voluntarily subjected Himself to the experiences of men, that by bringing Himself to the measure of our weakness whom He loved, He might correspondingly bring us to the measure of His own strength. And about to be offered up and giving Himself a ransom, He left for us a new Covenant-testament: My love I give unto you. And what and how great is it? For each of us He gave His life — the equivalent for all. This He demands from us in return for one another. And if we owe our lives to the brethren, and have made such a mutual compact with the Saviour, why should we any more hoard and shut up worldly goods, which are beggarly, foreign to us and transitory? Shall we shut up from each other what after a little shall be the property of the fire? Divinely and weightily John says, He that loves not his brother is a murderer, 1 John 3:14-15 the seed of Cain, a nursling of the devil. He has not God's compassion. He has no hope of better things. He is sterile; he is barren; he is not a branch of the ever-living supercelestial vine. He is cut off; he waits the perpetual fire.
+
+XXXVIII. But learn the more excellent way, which Paul shows for salvation. Love seeks not her own, 1 Corinthians 13:5 but is diffused on the brother. About him she is fluttered, about him she is soberly insane. Love covers a multitude of sins. 1 Peter 4:8 Perfect love casts out fear. 1 John 4:18 Vaunts not itself, is not puffed up; rejoices not in iniquity, but rejoices in the truth; bears all things, believes all things, hopes all things, endures all things. Love never fails. Prophecies are done away, tongues cease, gifts of healing fail on the earth. But these three abide, Faith, Hope, Love. But the greatest of these is Love. And rightly. For Faith departs when we are convinced by vision, by seeing God. And Hope vanishes when the things hoped for come. But Love comes to completion, and grows more when that which is perfect has been bestowed. If one introduces it into his soul, although he be born in sins, and has done many forbidden things, he is able, by increasing love, and adopting a pure repentance, to retrieve his mistakes. For let not this be left to despondency and despair by you, if you learn who the rich man is that has not a place in heaven, and what way he uses his property.
+
+XXXIX. If one should escape the superfluity of riches, and the difficulty they interpose in the way of life, and be able to enjoy the eternal good things; but should happen, either from ignorance or involuntary circumstances, after the seal and redemption, to fall into sins or transgressions so as to be quite carried away; such a man is entirely rejected by God. For to every one who has turned to God in truth, and with his whole heart, the doors are open, and the thrice-glad Father receives His truly repentant son. And true repentance is to be no longer bound in the same sins for which He denounced death against Himself, but to eradicate them completely from the soul. For on their extirpation God takes up His abode again in you. For it is said there is great and exceeding joy and festival in the heavens with the Father and the angels when one sinner turns and repents. Luke 15:10 Wherefore also He cries, I will have mercy, and not sacrifice. Hosea 6:6; Matthew 9:13 I desire not the death, but the repentance of the sinner. Ezekiel 18:23 Though your sins be as scarlet wool, I will make them white as snow; though they be blacker than darkness, I will wash and make them like white wool. Isaiah 1:18 For it is in the power of God alone to grant the forgiveness of sins, and not to impute transgressions; since also the Lord commands us each day to forgive the repenting brethren. Matthew 6:14 And if we, being evil, know to give good gifts, Luke 11:13 much more is it the nature of the Father of mercies, the good Father of all consolation, much pitying, very merciful, to be long-suffering, to wait for those who have turned. And to turn is really to cease from our sins, and to look no longer behind.
+
+XL. Forgiveness of past sins, then, God gives; but of future, each one gives to himself. And this is to repent, to condemn the past deeds, and beg oblivion of them from the Father, who only of all is able to undo what is done, by mercy proceeding from Him, and to blot out former sins by the dew of the Spirit. For by the state in which I find you will I judge, also, is what in each case the end of all cries aloud. So that even in the case of one who has done the greatest good deeds in his life, but at the end has run headlong into wickedness, all his former pains are profitless to him, since at the catastrophe of the drama he has given up his part; while it is possible for the man who formerly led a bad and dissolute life, on afterwards repenting, to overcome in the time after repentance the evil conduct of a long time. But it needs great carefulness, just as bodies that have suffered by protracted disease need regimen and special attention. Thief, do you wish to get forgiveness? steal no more. Adulterer, burn no more. Fornicator, live for the future chastely. You who has robbed, give back, and give back more than you took. False witness, practice truth. Perjurer, swear no more, and extirpate the rest of the passions, wrath, lust, grief, fear; that you may be found at the end to have previously in this world been reconciled to the adversary. It is then probably impossible all at once to eradicate inbred passions; but by God's power and human intercession, and the help of brethren, and sincere repentance, and constant care, they are corrected.
+
+XLI. Wherefore it is by all means necessary for you, who art pompous, and powerful, and rich, to set over yourself some man of God as a trainer and governor. Reverence, though it be but one man; fear, though it be but one man. Give yourself to hearing, though it be but one speaking freely, using harshness, and at the same time healing. For it is good for the eyes not to continue always wanton, but to weep and smart sometimes, for greater health. So also nothing is more pernicious to the soul than uninterrupted pleasure. For it is blinded by melting away, if it remain unmoved by bold speech. Fear this man when angry; be pained at his groaning; and reverence him when making his anger to cease; and anticipate him when he is deprecating punishment. Let him pass many sleepless nights for you, interceding for you with God, influencing the Father with the magic of familiar litanies. For He does not hold out against His children when they beg His pity. And for you he will pray purely, held in high honour as an angel of God, and grieved not by you, but for you. This is sincere repentance. God is not mocked, Galatians 6:7 nor does He give heed to vain words. For He alone searches the marrow and reins of the heart, and hears those that are in the fire, and listens to those who supplicate in the whale's belly; and is near to all who believe, and far from the ungodly if they repent not.
+
+XLII. And that you may be still more confident, that repenting thus truly there remains for you a sure hope of salvation, listen to a tale, which is not a tale but a narrative, handed down and committed to the custody of memory, about the Apostle John. For when, on the tyrant's death, he returned to Ephesus from the isle of Patmos, he went away, being invited, to the contiguous territories of the nations, here to appoint bishops, there to set in order whole Churches, there to ordain such as were marked out by the Spirit.
+
+Having come to one of the cities not far off (the name of which some give ), and having put the brethren to rest in other matters, at last, looking to the bishop appointed, and seeing a youth, powerful in body, comely in appearance, and ardent, said, This (youth) I commit to you in all earnestness, in the presence of the Church, and with Christ as witness. And on his accepting and promising all, he gave the same injunction and testimony. And he set out for Ephesus. And the presbyter taking home the youth committed to him, reared, kept, cherished, and finally baptized him. After this he relaxed his stricter care and guardianship, under the idea that the seal of the Lord he had set on him was a complete protection to him. But on his obtaining premature freedom, some youths of his age, idle, dissolute, and adepts in evil courses, corrupt him. First they entice him by many costly entertainments; then afterwards by night issuing forth for highway robbery, they take him along with them. Then they dared to execute together something greater. And he by degrees got accustomed; and from greatness of nature, when he had gone aside from the right path, and like a hard-mouthed and powerful horse, had taken the bit between his teeth, rushed with all the more force down into the depths. And having entirely despaired of salvation in God, he no longer meditated what was insignificant, but having perpetrated some great exploit, now that he was once lost, he made up his mind to a like fate with the rest. Taking them and forming a band of robbers, he was the prompt captain of the bandits, the fiercest, the bloodiest, the cruelest.
+
+Time passed, and some necessity having emerged, they send again for John. He, when he had settled the other matters on account of which he came, said, Come now, O bishop, restore to us the deposit which I and the Saviour committed to you in the face of the Church over which you preside, as witness. The other was at first confounded, thinking that it was a false charge about money which he did not get; and he could neither believe the allegation regarding what he had not, nor disbelieve John. But when he said I demand the young man, and the soul of the brother, the old man, groaning deeply, and bursting into tears, said, He is dead. How and what kind of death? He is dead, he said, to God. For he turned wicked and abandoned, and at last a robber; and now he has taken possession of the mountain in front of the church, along with a band like him. Rending, therefore, his clothes, and striking his head with great lamentation, the apostle said, It was a fine guard of a brother's soul I left! But let a horse be brought me, and let some one be my guide on the way. He rode away, just as he was, straight from the church. On coming to the place, he is arrested by the robbers' outpost; neither fleeing nor entreating, but crying, It was for this I came. Lead me to your captain; who meanwhile was waiting, all armed as he was. But when he recognized John as he advanced, he turned, ashamed, to flight. The other followed with all his might, forgetting his age, crying, Why, my son, do you flee from me, your father, unarmed, old? Son, pity me. Fear not; you have still hope of life. I will give account to Christ for you. If need be, I will willingly endure your death, as the Lord did death for us. For you I will surrender my life. Stand, believe; Christ has sent me.
+
+And he, when he heard, first stood, looking down; then threw down his arms, then trembled and wept bitterly. And on the old man approaching, he embraced him, speaking for himself with lamentations as he could, and baptized a second time with tears, concealing only his right hand. The other pledging, and assuring him on oath that he would find forgiveness for himself from the Saviour, beseeching and falling on his knees, and kissing his right hand itself, as now purified by repentance, led him back to the church. Then by supplicating with copious prayers, and striving along with him in continual fastings, and subduing his mind by various utterances of words, did not depart, as they say, till he restored him to the Church, presenting in him a great example of true repentance and a great token of regeneration, a trophy of the resurrection for which we hope; when at the end of the world, the angels, radiant with joy, hymning and opening the heavens, shall receive into the celestial abodes those who truly repent; and before all, the Saviour Himself goes to meet them, welcoming them; holding forth the shadowless, ceaseless light; conducting them, to the Father's bosom, to eternal life, to the kingdom of heaven.
+
+Let one believe these things, and the disciples of God, and God, who is surety, the Prophecies, the Gospels, the Apostolic words; living in accordance with them, and lending his ears, and practising the deeds, he shall at his decease see the end and demonstration of the truths taught. For he who in this world welcomes the angel of penitence will not repent at the time that he leaves the body, nor be ashamed when he sees the Saviour approaching in His glory and with His army. He fears not the fire.
+
+But if one chooses to continue and to sin perpetually in pleasures, and values indulgence here above eternal life, and turns away from the Saviour, who gives forgiveness; let him no more blame either God, or riches, or his having fallen, but his own soul, which voluntarily perishes. But to him who directs his eye to salvation and desires it, and asks with boldness and vehemence for its bestowal, the good Father who is in heaven will give the true purification and the changeless life. To whom, by His Son Jesus Christ, the Lord of the living and dead, and by the Holy Spirit, be glory, honour, power, eternal majesty, both now and ever, from generation to generation, and from eternity to eternity. Amen.
+  '''),
+  Reading('St. Nektarios on Discovering God','','St. Nektarios of Aegina','''
+It is evident that unbelief is an evil offspring of an evil heart; for the guileless and pure heart everywhere discovers God, everywhere discerns Him, and always unhesitatingly believes in His existence. When the man of pure heart looks at the World of Nature, that is, at the sky, the earth, and the sea and at all things in them, and observes the systems constituting them, the infinite multitude of stars of heaven, the innumerable multitudes of birds and quadrupeds and every kind of animal of the earth, the variety of plants on it, the abundance of fish in the sea, he is immediately amazed and exclaims with the Prophet David: "How great are Thy works, O Lord! In wisdom Thou made them all." Such a man, impelled by his pure heart, discovers God also in the World of Grace of the Church, from which the evil man is far removed. The man of pure heart believes in the Church, admires her spiritual system, discovers God in the Mysteria, in the heights of the theology, in the light of the Divine revelations, in the truths of the teachings, in the commandments of the Law, in the achievements of the Saints, in the very good deed, in every perfect gift, and in general in the whole of the creation. Justly then did the Lord say in His Beatitudes of those possessing purity of the heart: "Blessed are the pure in heart, for they shall see God."
+  '''),
+  Reading('Saint Silouan on Love','','Saint Silouan the Athonite','''
+The soul cannot know peace unless she prays for her enemies. The soul that has learned of God's grace to pray, feels love and compassion for every created thing, and in particular for mankind, for whom the Lord suffered on the Cross, and His soul was heavy for every one of us.
+
+The Lord taught me to love my enemies. Without the grace of God we cannot love our enemies. Only the Holy Spirit teaches love, and then even devils arouse our pity because they have fallen from good, and lost humility in God.
+
+I beseech you, put this to the test. When a man affronts you or brings dishonor on your head, or takes what is yours, or persecutes the Church, pray to the Lord, saying: "O Lord, we are all Thy creatures. Have pity on Thy servants and turn their hearts to repentance," and you will be aware of grace in your soul. To begin with, constrain your heart to love enemies, and the Lord, seeing your good will, will help you in all things, and experience itself will show you the way. But the man who thinks with malice of his enemies has not God's love within him, and does not know God.
+
+If you will pray for your enemies, peace will come to you; but when you can love your enemies - know that a great measure of the grace of God dwells in you, though I do not say perfect grace as yet, but sufficient for salvation. Whereas if you revile your enemies, it means there is an evil spirit living in you and bringing evil thoughts into your heart, for, in the words of the Lord, out of the heart proceed evil thoughts - or good thoughts.
+
+The good man thinks to himself in this wise: Every one who has strayed from the truth brings destruction on himself and is therefore to be pitied. But of course the man who has not learned the love of the Holy Spirit will not pray for his enemies. The man who has learned love from the Holy Spirit sorrows all his life over those who are not saved, and sheds abundant tears for the people, and the grace of God gives him strength to love his enemies.
+
+Understand me. It is so simple. People who do not know God, or who go against Him, are to be pitied; the heart sorrows for them and the eye weeps. Both paradise and torment are clearly visible to us: We know this through the Holy Spirit. And did not the Lord Himself say, "The kingdom of God is within you"? Thus eternal life has its beginning here in this life; and it is here that we sow the seeds of eternal torment. Where there is pride there cannot be grace, and if we lose grace we also lose both love of God and assurance in prayer. The soul is then tormented by evil thoughts and does not understand that she must humble herself and love her enemies, for there is no other way to please God.
+
+What shall I render unto Thee, O Lord,
+for that Thou hast poured such great mercy on my soul?
+Grant, I beg Thee, that I may see my iniquities,
+and ever weep before Thee,
+for Thou art filled with love for humble souls,
+and dost give them the grace of the Holy Spirit.
+
+O merciful God, forgive me.
+Thou seest how my soul is drawn to Thee, her Creator.
+Thou hast wounded my soul with Thy love,
+and she thirsts for Thee, and wearies without end,
+and day and night, insatiable, reaches toward Thee,
+and has no wish to look upon this world, though I do love it,
+but above all I love Thee, my Creator,
+and my soul longs after Thee.
+
+O my Creator, why have I, Thy little creature,
+grieved Thee so often? Yet Thou hast not remembered my sins.
+
+Glory be to the Lord God that He gave us His Only-begotten
+Son for the sake of our salvation.
+Glory be to the Only-begotten Son that He deigned to be
+born of the Most Holy Virgin, and suffered for our salvation,
+and gave us His Most Pure Body and Blood to eternal life,
+and sent His Holy Spirit on the earth.
+
+O Lord, grant me tears to shed for myself,
+and for the whole universe,
+that the nations may know Thee and live eternally with Thee,
+O Lord, vouchsafe us the gift of Thy humble Holy Spirit,
+that we may apprehend Thy glory.
+  '''),
+  Reading('The Homily concerning the Holy Mother of God','','St. Gregory the Wonderworker','''
+1. When I remember the disobedience of Eve, I weep. But when I view the fruit of Mary, I am again renewed. Deathless by descent, invisible through beauty, before the ages light of light; of God the Father wast Thou begotten; being Word and Son of God, Thou didst take on flesh from Mary Virgin, in order that Thou mightest renew afresh Adam fashioned by Thy holy hand.
+
+2. Holy, deathless, eternal, inaccessible, without change, without turn, True Son of God art Thou before the ages; yet wast pleased to be conceived and formed in the womb of the Holy Virgin, in order that Thou mightest make alive once more man first fashioned by Thy holy hand, but dead through sin.
+
+3. By the good pleasure Thou didst issue forth, by the good pleasure and will of the invisible Father. Wherefore we all invoke Thee, calling Thee King. Be Thou our succour; Thou that wast born of the Virgin and wrapt in swaddling clothes and laid in the manger, and wast suckled by Mary; to the end that Thou mightest make alive once more the first-created Adam that was dead through sin.
+
+4. Feasted with knowledge from the Divine knowledge, let us emit like a fountain the sweetly sounding hymns of praise; let us glorify the sweet powers of the Divine Word. With sweetly sounding doctrine let us send forth praise worthy of the Divine grace; forasmuch as earth, and sea, and all created things, visible and invisible, bless and |163 glorify God's love for man; for that His majesty was among [us]. For being God He appeared in the flesh, and taking on Himself extreme humility, was born of the Holy Virgin, to the end that He might renew afresh him that was dead through disobedience.
+
+5. Turn ye, O congregations, and come. Let us all praise Him that is born of the Virgin. For that being the glory and image before the ages of the Godhead, He yet became a fellow-sufferer with us of poverty. Being the exceeding magnifical power [and] image of God, He took on the form of a slave. He that putteth on the light as a garment, consorted with men as one that is vile. He that is hymned by cherubim and by myriad angels, as a citizen on earth doth He live.2 He that being before (all) maketh all creation alive, was born of the Holy Virgin, in order that He might make alive once more the first created.
+
+6. Christ our God took on [Himself] to begin life as man (lit. the beginning of humanity), being yet a sharer of the [life] without beginning of God the Father; in order to lift up unto the beginningless beginning of the Godhead man that was fallen.
+
+7. And He took the form of a slave from the Holy Virgin, in order to call us up to the glorified dominical image. He put on the outward shape made of clay, that He might make [us] sharers of the heavenly form. He sat in the lap of the Holy Virgin, that He might place us on the right hand in the intimacy of His Father. In a vile body was He; and by means of the same He was laid in a tomb, that He might manifest us heirs of eternal life. In the womb of the Holy Virgin was He, the incomprehensible (or inaccessible) one, confined; in order that He might renew the Adam destroyed through sin.
+
+8. Power of the Father and living font, Christ our God, [He] is the life-fraught mystery, in whom even through |164 [His] living voice we believed; life without end He freely bestows on those who hope in Him, and with the Spirit of grace He illumines the races of men. From this fountain, living and ever-flowing and of sweet taste, whosoever in faith are athirst are filled and sated.
+
+9. Wherefore even with one voice [let us sing the praises] of God the Word, that according to the worthiness of each is cause and promoter of salvation, unto young men and old, and unto children and women. For from Mary, the divine fountain of the ineffable Godhead, gushes forth grace and free gift of the Holy Spirit. From a single Holy Virgin the Pearl of much price proceeded, in order to make alive once more the first-created man that was dead through sin.
+
+10. He is the Sun of Righteousness, dawning upon earth; and in the fashion of a man He deigned to come unto our race. Having hidden in the coarse matter of humanity the effulgent splendour of His Godhead, and having filled [us] with the Divine Spirit, He hath also made us worthy to sing unto Him the angelic hymn of praise.
+
+11. Let us twine, as with a wreath, the souls (or selves) [of them that love the festival and love to hearken] 3 with golden blossoms, fain to be crowned with wreaths from the unfading gardens; and offering in our hands the fair-fruited flowers of Christ, let us gather [them]. For the God-like temple of the Holy Virgin is meet to be glorified with such a crown; because the illumining Pearl cometh forth, to the end that it may raise up again into the ever-streaming light them that were gone down into darkness and the shadow of death.
+
+12. Regaled with the medicine (lit. poison) of the Divine words of Christ unto the grace of the same, let us send up unto Him some worthy hymn. Let us hasten to gather up |165 the fruits of the mystery of immortality. Let us hasten to inhale the perfume of the God-clad symmetry (or harmony). In [our] language let us luxuriate in the Divine grace, and let us hasten to drive away from us the foul odour of sin. Let us rather clothe us in the sweet savour of the works of righteousness. Having put on ourselves the breastplate of faith, and the garb of a virtuous life, and the holy and spotless raiment of purity, let us fast (or? keep guard). For He is excellence, and hath His dwelling with peace, and is yoke-fellow of love and consorteth [therewith]; a blossom smelling of hope. And the lambs which in faith browse upon this shoot forth the light-like rod of the Trinity. But we, O my friends, resorting to the garden of the Saviour, let us praise the Holy Virgin; saying along with the angels in the language of Divine grace, "Rejoice thou and be glad." For from her first shone forth the eternally radiant light, that lighteth us with its goodness.
+
+13. The Holy Virgin is herself both an honourable temple of God and a shrine made pure, and a golden altar of whole burnt offerings. By reason of her surpassing purity [she is] the Divine incense of oblation ( = προθέσεως), and oil of the holy grace, and a precious vase bearing in itself the true nard; [yea and] the priestly diadem revealing the good pleasure of God, whom she alone approacheth holy in body and soul. [She is] the door which looks eastward, and by the comings in and goings forth the whole earth is illuminated. The fertile olive from which the Holy Spirit took the fleshly slip (or twig) of the Lord, and saved the suffering race of men. She is the boast of virgins, and the joy of mothers; the declaration of archangels, even as it was spoken: "Be thou glad and rejoice, the Lord with thee"; and again, "from thee"; in order that He may make new once more the dead through sin. |166 
+
+14. Thou didst allow her to remain a virgin, and wast pleased, O Lord, to lie in the Virgin's womb, sending in advance the archangel to announce it [to her]. But he from above, from the ineffable hosts, came unto Mary, and first heralded to her the tidings: "Be thou glad and rejoice." And he also added, "The Lord with thee. Blessed art thou among women, and blessed is the fruit of thy womb." But she was in tumult, and pondered in her mind what sort of tidings was this. But then in seemly fashion, I ween, the grace chose out the Holy Virgin; for she was wise in all ways, nor was there her like among women of all nations.
+
+15. Not as the first virgin did she, being alone in the garden, with loose and effeminate thought accept the advice of the serpent and destroy the thought of her heart; through whom came all the toil and sorrow of the saint. But such was the Holy Virgin that by her the former's transgressions also were rectified. Nor, like Sarah, when she had good tidings that she would bear a son, did she rashly laugh; nor like Rebekah, who, with the temper of a deserter, accepted the ornaments, and willingly gave water to drink unto the camels of her betrothed. And unlike all other women, she did not accept the grace of greeting indiscreetly (or without testing it), but only through thought bright and clear (or through glittering thought).
+
+16. Whence then dost thou bring with thee to us such a blessing? and [out] of what treasure-houses has been sent to us the Pearl of the Word? I would fain know what is the gift, and who is bearer of the Word, or indeed who is the sender thereof. From heaven thou earnest, the form of man thou displayest, and dost radiate forth a blaze (or torch) of light.
+
+17. These things in herself the Holy Virgin asked in doubt. But the angel with such words as these solved her |167 doubts: "The Holy Spirit shall come unto thee, and the power of the Most High shall overshadow thee. Wherefore thou shalt conceive and shalt bear a Son, and shalt call His name Jesus, unto the end that He save the race of men from the death of sin."
+
+18. The Virgin spake in turn unto the angel: My mind swims in thy words as in a sea. How shall this be unto me? for I desire not to know an earthly man, because I have devoted myself to the heavenly Bridegroom. I desire to remain a virgin. I wish not to betray the honour of my virginity.
+
+19. Again in such words as these the angel confirmed the holy Virgin: Fear not, Mary. For 'tis not to frighten thee I came, but to dispel all thought of fear. Fear not, Mary; for thou hast found grace at God's hands. Scan not too narrowly the grace, since it deigns not to give way to the laws of nature. The Holy Spirit shall come unto thee; wherefore that which is born of thee is holy and Son of God, sharer of the form and sharer of the substance, and sharer of the eternity of the Father; in whom the Father, having acquired all manifestations, hath the adumbration (? of Himself) face to face,4 and by means of the light the glory gleameth forth.
+
+20. Great is the mystery. Thou hast learned, O Mary, that which till now was hidden from angels. Thou hast known that which deaf prophets and patriarchs heard not; and thou hast heard that which the choirs of the God-clad were not ever held worthy to hear. David and Isaiah, and all the prophets foretold in their preaching about the Lord's becoming man. But do thou alone, O Holy Virgin, receive the mystery unknown by them, and learn and be not perplexed as to how this shall be unto thee. For He that fashioned man out of virgin soil, the Selfsame shall even now do as. He will for the salvation of His creature. |168 
+
+21. New radiance now of eternal light gleams forth for us in the inspired fitness (or harmony) of these words. Now is it meet and fitting for me to wonder after the manner of the Holy Virgin, to whom in seemly wise before all things the angel gave salutation thus: "Be thou glad and rejoice"; because with her are quickened and live, all the treasures of grace. Among all nations she alone was both virgin and mother and without knowledge of man, holy in body and soul. Among all nations she alone was made worthy to bring forth God; alone she carried in her Him 5 who carries along all by His word.
+
+22. And not only is it meet to marvel at the beauty of the Holy Mother of God, but also at the excellence of her spirit. Wherefore were addressed to her the words: "The Lord with thee"; and again also, "The Lord from thee." As if this: " He will save him that is in His image as being pitiful." As purse of the Divine mystery the Holy Virgin made herself ready, in which the Pearl of Life was enveloped in flesh and sealed; and she also became the receptacle of supramundane and Divine salvation.
+
+23. Therefore let us also come, O my friends, and discharge our debt according to our ability; and following the voice of the archangel, let us cry aloud: "Be thou glad and rejoice; the Lord with thee." Nor any heavenly bridegroom He, but the very Lord Himself, the Father of purity and the guardian of virginity, and the Lord of holiness, the creator of inviolability, and the giver of freedom, overseer of salvation, and ordainer of true wisdom and bestower thereof----the Lord Himself with thee; for as much as even in thee the Divine grace reposed [and] upon thee, in order to make alive the race of men like a compassionate Lord.
+
+24. Not any more doth Adam fear the crafty serpent; |169 because our Lord is come and hath dispersed the host of the enemy. Not any more doth the race of men fear the craftiness and mad deceit of the serpent, because the Lord hath bruised the head of the dragon in the water of baptism. Not any more do I fear to hear the words: Dust thou wast, and unto dust shalt thou be turned. For the Lord in baptism hath washed away the stain of sin. Not any more do I weep, nor ever lament, nor ever reckon it again to wretchedness, when the thorns wound me. For our Lord hath plucked out by the roots the sins which are our thorns,6 and hath crowned His head withal. Loosed is the first curse in which He said: Thorns and thistles shall earth bring forth to thee, for the thorn is plucked out by the roots, and the thistle withered up; and from the Holy Virgin hath shot up the tree of life and grace. No more doth Eva fear the reproach of the pangs of childbirth; for by the Holy Virgin her transgressions are blotted out and effaced; forasmuch as in her was God born, to the end that He might make alive him whom He made in His image.
+
+25. A bulwark of imperishable life hath the Holy Virgin become unto us, and a fountain of light to those who have faith in Christ; a sunrise of the reasonable light 7 is she found to be. Be thou glad and rejoice. The Lord with thee and from thee, who in His Godhead and His manhood is perfect, in whom dwelleth all the fulness of the Godhead: "Be glad and rejoice, the Lord with thee and from thee" ----with His handmaid the Lord of glory; with her that is unspotted, He that halloweth all; with the beautiful, He who is wonderful in beauty above all the sons of men, to the end that He may make alive him whom He made in His image.
+
+26. In the Divine words of the Teacher we believe and |170 rejoice; for with roses and lilies and fragrant wreaths Christ, our imperishable Spring, hath come unto us, and hath filled the fair garden of the churches, even the seed-plots of our hearts, from the paradise of God. So then with holy heart let us draw nigh, and find the golden faith gleaming wide and the fruits of immortality smelling sweet therein. For in the desert of Mary the fair-fruited tree hath shot up, that like one holy and pitiful, He may make alive His creature.
+
+27. Holy and wise in all things was the all-blessed Virgin; in all ways peerless among all nations, and unrivalled among women. Not as the first virgin Eva, who being alone in the garden, was in her weak mind led astray by the serpent; and so took his advice and brought death into the world; and because of that hath been all the suffering of saints. But in her alone, in this Holy Virgin Mary, the Stem of Life hath shot up for us. For she alone was spotless in soul and body.
+
+28. With intrepid mind she spake to the angel: Whence is this salutation, and how shall this be unto me? Dost thou desire to learn how the exceeding magnifical power becomes a fellow-sufferer with us of our poverty? How He that hath power over the hosts assumes the image of our baseness; and how He who is God before the ages is about to become a child and be made flesh, He that putteth on light as a garment and giveth life unto His creature. Grant me, said the Holy Virgin, to learn such an impenetrable mystery, and I become the vessel that receives the Divine mystery (or thought), being overshadowed by the Holy Spirit, and [I am] to receive the truth of His flesh in my flesh, unto the building by Wisdom of her abode.
+
+29. The Word becometh flesh and dwelleth in us, that is, in the same flesh, which it took from us; and by the spirit of its native self (or soul) it spiritualises [itself]. And the unchangeable God accepts the form of a slave, to the end |171 that He be regarded by the faithful as man; but that He may be manifested as God to the unfaithful, in order to renew the first-created.
+
+30. The element of flesh doth the Son of God take from the Holy Virgin, for before the ages He is God. He hath deigned to be born, and to be called Son of man, and to become visible, He the invisible; and for our sake to be poor, who is all riches; and to suffer as man, He the impassible and deathless. For with (or in) the flesh in truth He was united, but He was not changed in spirit. In a mortal body the Invisible One was enveloped, that He might make it also deathless, making it sharer of His deathlessness through His Godhead; to the end that He might renew him that was fashioned by His holy hands.
+
+31. Glory and light are come into the world, Christ our God. He glorifies and illumines with His ever-streaming light, to whom the voice of the unseen Father bore witness: "Yonder is My Son and Word, who is before the ages."
+
+32. But Mary was fortified by the word of the angel; but pondered in herself the birth of the Lord, confronted with the disparity of human thought. Now she lifted herself up to the lofty plane of the Divine, now again her mind was occupied with the lowliness of humanity. And thus as in the scale of reflection she balances the one and the other; even in that moment she becometh truly worthy of the design (or mind, or? entrance) of God. For she (or He) that preserved the treasure of her virginity pure and untarnished, she (or He) also made the boundaries of her heart inviolate. And the creature is saved which He made in His image.
+
+33. Christ, Son of God, who was born of the Holy Virgin Mary, hath come as grace into the world; because by means of grace He hath made us alive, He that fashioned all things. Now that Christ is born into the world, doth all creation dance. He giveth in exchange His temptation, |172 the coin of long-suffering, that He may claim (for us) the mansions of the kingdom. The Holy Virgin was filled with joy because He took from her His flesh, to the end that He might raise again him that was fallen under sin.
+
+34. Evil thoughts are turned from us, when we sing psalms to Thee, O heavenly and holy Father; beholding the great light which Thou hast given to us, Jesus Christ, who was born of the Holy Virgin and wrought by means of His Godhead wonders; but for our sake accepted sufferings by means of His flesh. We then 8 also still being in the flesh will hasten in body and soul to make the Deity propitious to us with angelic hymns, touching with our hands in figurative wise the divine [element] of the dogma (?), and will sow in our minds (or in our mysteries) the truth of faith. For the mystery (or thought) is inaccessible, invisible, unchangeable, not to be circumscribed, worshipped in its fulness and marvelled at in [our] mind. For even the Holy Virgin herself had marvelled at the manner of the mystery (or thought). How could the splendour of light become the offspring of a woman? She embraced in herself the treasure of life, and pondered in her mind the salutation of the archangel; until in the completion (of time) she bore the fruit of salvation, that it might save (or make alive) man.
+
+35. Therefore, O ye fair-fruited and comely branches of Christ's teaching, ye shall in this place bring to us the |173 fruits of blessing (= εὐλογίας). Here, where is all purity and fragrance, let us offer to God with holy conscience the incense of prayer. Here, where virginity and temperance dance together, bearing for fruit the life-giving cluster of grapes. Here, where they . . . unto us the . . . of victorious power and the treasure of love.9 Here, where the mystery of the Holy Trinity was revealed by the archangel to the Holy Virgin according to the gospel: "The Holy Spirit shall come upon thee and the power of the most High shall overshadow thee. For Holy is that which is born of thee, Son of God." To whom be glory and honour for ever and ever.
+  '''),
+  Reading('Homily on Fasting','','St. Basil the Great','''
+1. “Sound the trumpet,” he declares, “in the new moon, on the high day of your feast.”
+This command is from the prophets. But it’s for us, too. The reading indicates the
+beginning of the feast days, and to us every trumpet is louder, and every musical
+instrument clearer.
+For we have come to know the gift of the fasts of Isaiah. While the Jewish manner of
+fasting has been set aside, a true fast has been handed down to us. Don’t “fast unto
+judgment and strife,” but “loose every chain of injustice.” And the Lord says: “Don’t be
+like the gloomy-faced, but wash your face and anoint your head.”Therefore let’s agree, as
+it has been taught, that we won’t be looking gloomy on the days that are approaching.
+Rather, we will cheerfully, agreeably look forward to them, as is fitting for saints.
+No one is passionless when he is receiving a victory crown! No one is gloomy when a
+victory monument is being erected for him. Don’t make being healed gloomy! It’s
+outrageous that you don’t rejoice over the health of your soul, but grieve over changing
+foods. You appear to be giving more favors to the pleasure of your stomach than to the
+care of your soul.
+While getting filled up does a favor for the stomach, fasting returns benefits to the soul.
+Be encouraged, because the doctor has given you a powerful remedy for sin. Strong,
+powerful medicines can get rid of annoying worms that are living in the bowels of
+children. Fasting is like that, as it cuts down to the depths, venturing into the soul to kill
+sin. It is truly fitting to call it by this honorable name of medicine.
+
+2. “Anoint your head, and wash your face.” The word calls to you in a mystery. What is
+anointed is christened; what is washed is cleansed. Transfer this divine law to your inner
+life. Thoroughly wash the soul of sins. Anoint your head with a holy oil, so that you may
+be a partaker of Christ, and then go forth to the fast.
+“Don’t darken your face like the hypocrites.” A face is darkened when the inner
+disposition is feigned, arranged to obscure it to the outside, like a curtain conceals what is
+false.
+An actor in the theater puts on the face of another. Often one who is a slave puts on the
+face of a master, and a subject puts on royalty. This also happens in life. Just as in the
+production cast of one’s own life many act on the stage. Some things are borne in the
+heart, but others are shown to men for the sake of appearances. Therefore don’t darken
+your face. Whatever kind it is, let it show.
+Don’t disfigure yourself toward gloominess, or be chasing after the glory of appearing
+temperate. Not even almsgiving is of any profit when it is trumpeted, and neither is
+fasting that is done for publicity of any value. Ostentatious things don’t bear fruit that
+lasts through the coming ages, but return back in the praises of men.
+So run to greet the cheerful gift of the fast. Fasting is an ancient gift, but it is not worn out
+and antiquated. Rather, it is continually made new, and still is coming into bloom.
+
+3. Do you think I am finding the ancient origin of fasting from the law? Fasting is even
+older than the law. If you will tolerate me a little while, you will find the truth from the
+word. Don’t think that the Day of Atonement, commanded to Israel in the seventh month,
+the tenth day of the month, was the beginning of fasting.
+Indeed, come on and walk through the history, investigating its ancient origins. For the
+invention isn’t new. It’s an heirloom from the fathers. Everything of such great antiquity
+deserves respect for its importance. Show some respect for the gray head of fasting!
+Fasting is as old as mankind itself. It was given as a law in paradise. The first
+commandment Adam received was: “From the tree of the knowledge of good and evil do
+not eat.” Now this command, “do not eat,” is the divine law of fasting and temperance. If
+Eve had fasted from the tree, we would not have to keep this fast now.
+The strong don’t need a doctor, but the sick do. We were made sick through sin; let’s be
+healed through repentance. But repentance without fasting is ineffective. “For the earth is
+cursed, thorns and briars rise up to you.” You see, enduring pain has been prescribed for
+you, not delicate living.
+Through fasting satisfaction is made to God. But the way of life of fasting in paradise is
+also an image, as people were sharing the life of angels. Even more than that, through
+contentment with little, humanity’s likeness to the angels would have been established.
+But also because whatever kinds of diet human inventiveness later discovered, those in
+paradise had not yet come to understand. There wasn’t the drinking of wine yet, nor the
+eating of meat, nor anything clouding the human mind.
+
+4. Since we did not fast, we fell from paradise. Well, now let’s fast, so that we may go
+back again. Remember Lazarus, how through fasting he entered into paradise? Don’t
+imitate Eve’s disobedience; don’t again receive counsel from the serpent. That’s how we
+were made subject to fleshly food. Don’t make weakness of the body and illness a
+pretext. You aren’t pretending to me, but you are talking to the One who knows.
+Tell me, aren’t you able to fast? But you’re able to be filled up with this life, and to afflict
+the body with the weight of the things being eaten? Indeed, I know that doctors have
+ordered even sick people to abstain and go hungry, rather than eat all kinds of foods. How
+come somebody like that is able to do these things, but you pretend you aren’t able to do
+that?
+What’s easier to the stomach? A plain diet that carries you through the night, or rich
+foods that weigh you down like a rock when you lie down? But even more than troubling
+you when you lie down, doesn’t it frequently turn on you like an enemy, tearing through
+and causing you stomach contractions?
+You would surely agree that the pilot of a merchant ship is better able to safely guide it to
+port if it is not fully loaded, when it is in excellent condition and light. The ship
+completely loaded down is sunk by a minor swell in the waters. But the boat that has a
+captain smart enough to toss overboard the extra weight will ride high above even
+surging waves.
+That’s like people in burdened down bodies. A person gets absorbed with filling up,
+getting weighed down until finally falling into ill health. But those who are wellequipped, light, and truly nourished, avoid the prospect of serious disease. They are like
+the boat in stormy weather that goes right over a dangerous rock.
+Contrast that with how relaxation from running, or taking a break from aging, actually
+makes you more miserable. But, you say, it is more fitting that those who are sick eat
+well, rather than a plain diet. However, the ability that governs the animal takes care of it
+through a plain diet and produces contentedness, and it learns to like being nourished. But
+if an animal is given expensive, exotic foods, it won’t be satisfied in the end, and may
+even get all kinds of diseases.
+
+5. But let the word walk you through history, passing through the antiquity of fasting. All
+the saints have protected it, like an inheritance passed down from the fathers. They in
+turn passed it down, like a father passing something down to a child. So we are the
+successors of this long line, and this possession has been entrusted to us.
+Wine wasn’t in paradise; there was not yet any slaughtering of animals, not yet any eating
+of meat. After the flood there was wine. After the flood, “you will eat all kinds of things,
+like you eat vegetables that grow from the ground.” When perfection was despaired, then
+the enjoyment of those things was allowed.
+Now the wine is an example of inexperience, as Noah was ignorant of the use of wine.
+For it had not yet come into use in life, neither been known in human custom. Since he
+had neither seen another do it, nor tried it himself, he was unguardedly hurt by it. “For
+Noah planted a vineyard, and he drank from the fruit, and he got drunk.” He wasn’t outof-control drunk, he just wasn’t aware of the potent thing he was consuming.
+So the invention of wine drinking is younger than paradise, and the dignity of fasting is
+established as being even more ancient. But we have also been taught about the fasting of
+Moses when he came onto the mountain. He wouldn’t have boldly faced the smoking
+summit, neither would he have had the courage to enter into the thick cloud, if he hadn’t
+been completely armed with fasting. Through fasting he received the commandments
+from the finger of God written on the tablets.
+And while up above the divine law was being received with fasting, down below gluttony
+was disgorging itself into idolatry. “For the people sat down to eat and drink, and they got
+up to play.” Forty days devoted to fasting and waiting were made useless by one bout of
+drunkenness.
+Fasting received the tablets written by finger of God, but drunkenness shattered them.
+The drunken crowd was judged unworthy to receive the divine law from the prophet of
+God. In one moment of time those people, who had been taught by the greatest miracle of
+God, were dragged off into Egyptian idolatry by their gluttonous inclination. Both of the
+arrangements are parallel— how fasting brings near to God, and how luxury betrays
+salvation.
+Come walk on down to later times.
+
+6. What did Esau throw away, and so was made a slave of his brother? Didn’t he sell his
+rights as first-born for a single meal? By contrast, wasn’t it with fasting and prayer that
+Hannah was favored to become the mother of Samuel?
+What great meal brought into being the invincible Samson? Wasn’t it fasting, with which
+he was conceived in the womb of his mother? Fasting conceived him, fasting nursed him,
+fasting made a man of him. The angel commanded his mother, “He must certainly not eat
+anything that comes from the vineyard, and he must certainly not drink wine or liquor.”
+Fasting gives birth to prophets; it strengthens the powerful. Fasting makes lawmakers
+wise. It is a safeguard of a soul, a stabilizing companion to the body, a weapon for the
+brave, a discipline for champions. Fasting knocks over temptations, anoints for godliness.
+It is a companion of sobriety, the crafter of a sound mind. In wars she fights bravely, in
+peace it teaches tranquility. It sanctifies the Nazirite, and it perfects the priest.
+How the law was introduced is figurative for true, mystical worship. One is not able to
+boldly face the divine presence without fasting. It made Elijah an observer of that
+marvelous vision. His soul was purified by fasting forty days, so that in the cave on Mt.
+Horeb he was considered worthy to see the Lord like one sees a man.
+By fasting he returned the widow’s child to her—he became stronger than death through
+fasting! While fasting, a cry went out from his mouth that closed up the heavens for three
+years and six months from the lawbreaking people. In order that the unbroken heart of the
+stubborn might be softened, he himself also took on the suffering of being condemned.
+On account of this he said, “As the Lord lives, there will not be water on the land, except
+through my mouth.” And he laid on all the people a fast through the famine, so that the
+evil effects from their self-indulgence and unrestrained life might be corrected.
+And what about the life of Elisha? How from the lodging place of the Shunemite he was
+driven away? And how he himself entertained the prophets? Wasn’t he completely
+hospitable with wild vegetables and a little flour? When the poisonous gourd was added, 
+those who had come in contact with it were about to be in danger. But the poison was
+neutralized by the prayer of fasting.
+Once fasting was discovered, all the saints were led by the hand into the divine way of
+life. There is a certain kind of substance, that the Greeks call amianton, that is impervious
+to fire. When it is placed in the flame, it seems to be made of coal, but when it comes up
+out of the fire, it is cleaner than if it had been washed in water. That’s what the bodies of
+those three children were like; they had bodies of amianton from fasting in Babylonia.
+For in the great fiery furnace, their nature being like gold, was then demonstrated to be
+superior when they were drawn from the fire unhurt.
+Here’s how their nature was demonstrated to be stronger than gold: the fire did not refine
+them, but simply preserved their sincerity. When they had not yet even been cast into the
+fire, the flames were being fed naphtha and pitch and branches, and they streamed out
+above the furnace forty-nine cubits, so that many of the Chaldeans standing near it were
+destroyed. Then, with fasting, when they were cast into the conflagration, they were able
+to walk around on their own feet, and they were breathing a little moistened air in the
+torrent of fire. And the fire didn’t even damage their hair, because they had been
+strengthened by fasting.
+
+7. Now Daniel (fasted) from desire, and went without eating bread or drinking water for
+three weeks. And when he was thrown down in their den, he taught the lions to fast!
+When one material strikes another, one is harder than the other, like bronze is harder than
+stone. Just so, the lions weren’t able to sink their teeth into him. Fasting is like
+sharpening the edges of a man by dipping his body in iron—it makes him tougher than
+lions! They couldn’t open their mouths against the saint.
+Fasting quenches the power of fire; it closes the mouths of lions. Fasting sends prayer up
+into heaven, becoming like wings for its upward journey. Fasting is the increase of
+houses, the mother of health. It’s an instructor of youth, an adornment to the old. It’s a
+good companion for traveling, a secure living companion to those dwelling together.
+A husband doesn’t suspect a plot against his marriage, and lives in harmony with his wife
+when he sees her fasting. A wife doesn’t fall apart in jealousy, and happily accepts the
+husband she sees fasting.
+Who makes his own house decline by fasting? Count the domestic benefits by
+considering the following things. No one has been deserted by those in the house on
+account of fasting. There’s no crying over the death of an animal, certainly no blood.
+Certainly nothing is missed by not bringing an unmerciful stomach out against the
+creatures.
+The knives of the cooks have stopped; the table is full enough with things growing
+naturally. The Sabbath was given to the Jews, so that “you will rest,” it says, “your
+animal and your child.” Fasting should become a rest for the household servants who
+slave away continually, all year long.
+Give rest to your cook, give freedom to the table keeper, stay the hand of the cupbearer.
+For once put an end to all those manufactured meals! Let the house be still for once from
+the myriad disturbances, and from the smoke, and from the odor of burning fat, and from
+the running around up and down, and from serving the stomach as if it were an
+unmerciful mistress!
+Even those who exact tribute sometimes give a little liberty to their subjects. The stomach
+should also give a vacation to the mouth! It should make a truce, a peace offering with us
+for five days. That stomach never stops demanding, and what it takes in today is
+forgotten tomorrow. Whenever it is filled, it philosophizes about abstinence; whenever it
+is emptied, it forgets those opinions.
+
+8. Fasting doesn’t know the nature of usury. The one who fasts doesn’t smell of interest
+tables. The interest rates of fasting don’t choke an orphan child’s inheritance, like snakes
+curled around a neck. Quite otherwise, fasting is an occasion for gladness.
+As thirst makes the water sweet, and coming to the table hungry makes what’s on it seem
+pleasant, so also fasting heightens the enjoyment of foods. For once fasting has entered
+deep into your being, and the continuous delight of it has broken through, it will give you
+a desire that makes you feel like a traveler who wants to come home for fellowship again.
+Therefore, if you would like to find yourself prepared to enjoy the pleasures of the table,
+receive renewal from fasting.
+But, if you are overcome by the excess of delights, without knowing yourself the unseen
+delights, by the love of pleasure the real pleasure is ruined.
+That’s not really desirable, because if the enjoyment doesn’t last, it comes to be despised.
+But possessions that are rare are much sought after for their enjoyment. So, too, this
+possession of fasting intends to bring about an exchange in our life, so that the grace of
+what has been given to us might remain with us.
+Don’t you see, that also the sun shines more brightly after the night? And being awake is
+more pleasant after sleep? And health is more desirable after the experience of the
+opposite? A table is for that very reason more gratifying after fasting. It’s like that both
+for the rich who live graciously, and for those with a simple and subsistence lifestyle.
+
+9. You should be afraid of the example of the rich man. That which is delightful
+throughout life cast him into the fire. It wasn’t unrighteousness, but delicate living that
+accused him, roasted him in the flames of the furnace. So for that reason, it is necessary
+that we have water to extinguish that fire.
+We ought not fast only because of what is going to happen, but in this flesh it is even
+more profitable. Those at the peak of health can have a turnaround and change, their
+natures get bent down, and they are no longer able to carry the burden of full health.
+See to it that you don’t go spitting on the water you’re drinking now, and like the rich
+man, afterward you desire a single drop. No one ever got a hangover from water. No head
+ever ached because it was burdened with water. No one’s feet were ever bound by living
+with another who was a water drinker. No feet were bound, no hands ruined, because
+they were sprinkled with water.
+It necessarily happens that those living luxuriously are working toward excessive
+diseases in their bodies, and their dissonance ripens for destruction.
+One fasting has a healthy complexion, not breaking out in a shameless, blushing redness,
+but moderation is adorned with paleness. One fasting has a gentle eye, a calm gait, and a
+thoughtful face. There is no intemperate, arrogant laughter, but rather fitting speech, and
+purity of heart.
+Remember the saints of old, “Of whom the world was not worthy, who went around in
+sheepskins, in goatskins, destitute, persecuted, mistreated.” Remember their mode of life,
+if indeed you are seeking after the same inheritance as them.
+What was it that caused Lazarus to wake up in the bosom of Abraham? Wasn’t it fasting?
+John’s life was one of fasting. He had no bed, no table, no fruitful piece of land, no
+plowing ox, no grain, no grinding and baking, nothing from the normal course of life.
+Because of this, “No one born of women has arisen greater than John the Baptist.”
+Like the others, fasting also marked Paul, who considered severe trials something to
+boast about, and he was caught up into the third heaven.
+But above all that has been said, our Lord took flesh and fortified it with fasting on behalf
+of us. Then in that condition he welcomed the assault of the devil,teaching us to anoint
+and to train ourselves with fastings before struggling with temptations. So when he was
+wrestling in a state of need, an opportunity was given. The devil was not able to approach
+the Lord on account of the supernatural nature of his divinity, unless he came down to
+humanity through the state of need. However, when he had gone back into the heavens,
+he partook of the food of the nature of the resurrected body of the believer.
+Doesn’t it grieve you, that you are overgrown and fattened up? While the mind is wasting
+away of atrophy, not even a single word is spoken about the life-giving teaching of
+salvation? Don’t you know, that just like when one army defeats the other, the flesh is
+handed over to the conquering spirit, and the spirit is changing the rank of the flesh to
+slavery? “These things are adversaries of each other.” So if you want to make the mind
+strong, tame the flesh through fasting!
+This is what the apostle said, that “however much the outer man is wasting away, so
+much the inner man is being renewed.” And this: “Whenever I am weak, then I am
+strong.”
+Won’t you despise destructive foods? Wouldn’t you rather receive a desire for the table
+in the kingdom, that fasting here prepares beforehand? Don’t you know that by excessive
+filling you are preparing for yourself a fat worm to torture you?
+Who has received anything of the fellowship of the spiritual gifts by abundant food and
+continual luxury? Moses, when receiving the law a second time, needed to fast a second
+time, too. If the animals hadn’t fasted together with the Ninevites, they wouldn’t have
+escaped the threatened destruction.
+Whose bodies fell in the desert? Wasn’t it those who desired to eat flesh? While those
+same people were satisfied with manna and water from the rock, they were defeating
+Egyptians, they were traveling through the sea, and “sickness could not be found in their
+tribes? But when they remembered the pots of meat, they also turned back in their lusts to
+Egypt, and they did not see the Promised Land. Don’t you fear this example? Don’t you
+shudder at gluttony, lest you be shut out from the good things you are hoping for?
+Neither would the wise Daniel have seen visions, if he had not illuminated his soul with
+fasting. From fatty foods what sooty vapors rise up, like a frequent, punishing cloud! The
+rays from the presence of the Holy Spirit can barely penetrate it to shine on the mind.
+Now if there is even a certain kind of food for angels, it is bread, as the prophet says:
+“Man ate the bread of angels.” It’s neither flesh, nor wine, nor whatever those who are
+slaves to the stomach anxiously seek out.
+Fasting is a weapon against the armies of demons: “For this kind doesn’t go out except by
+prayer and fasting.”
+From fasting come so many good things, but fullness is the beginning of insolence.
+Immediately it rushes in together with the delicacy, and with drunkenness, and with all
+kinds of rich sauces. All kinds of licentious behaviors start grazing. After that, men
+become “lusty horses” toward women, because the luxury makes a maddening itch enter
+into the soul. Those who are drunks pervert themselves against nature, using a male like a
+female, or vice-versa.
+But fasting even makes known how the proper boundaries of marriage work. The
+excesses of even things permitted by law are curtailed, introduced by agreement for an
+appropriate time, in order that the couple might be devoted to prayer.
+
+10. But don’t limit the goodness of fasting by abstaining only from foods. For true fasting
+is the enemy of evil. “Loose the chains of injustice!” Forgive your neighbor’s offense,
+and forgive his debts. Don’t “fast unto judgment and strife.” You don’t eat meat, but you
+eat your brother. You abstain from wine, but stubbornly hold on to insolence. You
+patiently wait until evening to partake, but you spend the day in court.
+“Woe to those who are drunk, but not from wine!” Wrath is a drunkenness of the soul,
+making it senseless, like wine. Grief itself is also drunkenness, sinking down the mind. 
+Fear is another drunkenness, whenever it fears things that don’t need to be feared. For he
+says, “from fear of my enemy, deliver my soul.” Together, each of these passions,
+allowing the mind to be taken over and out of control, is rightly termed drunkenness.
+Consider with me the one who is angry, how he is drunk with passion.
+He isn’t master of himself, he doesn’t know himself, and he doesn’t know who is
+standing around. He tries to hit everything, flailing all over, like somebody fighting in the
+dark. He declares that he is in control, he is hard to hold in, he reviles, he strikes, he
+threatens, he swears, he shouts, he curses.
+Guard against this kind of drunkenness, but don’t be given over to the kind that comes
+from wine, either. Don’t start being a water-drinker just because you’ve been drinking
+too much. Don’t let drunkenness initiate you into fasting. The entryway into fasting
+doesn’t come through drunkenness. Neither is greed the entryway into justice, nor is
+intemperance the way to sound judgment. To sum it up, evil never leads to virtue. There
+is another door into fasting. Drunkenness leads to intemperance, but contentment opens
+the door to fasting.
+The athlete practices before the contest. The one who fasts is practicing self-control
+ahead of time. Don’t approach these five days like you are coming to rescue them as if
+they need you, or like somebody who is trying to get around the intent of the law, by just
+laying aside intoxication. If you do that, you are suffering in vain. You are mistreating the
+body, but not relieving its need.
+This safe where you keep your valuables isn’t secure; there are holes in the bottom of
+your wine-bottles. The wine at least leaks out, and runs down its own path; but sin
+remains inside.
+A servant runs away from a master who beats him. So you keep staying with wine, even
+though it beats your head every day? The best measure of the use of wine is whether the
+body needs it. But if you happen to go outside of the bounds, tomorrow you will feel
+overloaded, gaping, dizzy, smelling rotten from the wine. To you, everything will be
+spinning around; everything will seem to be shaking. Drunkenness brings a sleep that’s a
+brother of death, but even being awake seems like being in a dream.
+
+11. So, do you know whom you are about to receive? He who promised us, that “I
+myself, and the Father, we will come and make our home with him.” Why, then, would
+you get caught being drunk, and close the door against the Master? Why would you
+encourage the enemy to occupy your stronghold? Drunkenness doesn’t make the Lord
+feel welcome; drunkenness chases away the Holy Spirit. For as smoke drives away bees,
+intoxication drives away the spiritual gifts.
+Fasting is the proper decorum of a city, stability of the marketplace, peace of homes,
+saving of possessions. Do you want to see its dignity?
+Compare with me today’s evening to tomorrow, and you will see the city changed from
+its raging, surging sea into a deep tranquility. But I pray, that both today might be like
+tomorrow in dignity, and tomorrow might leave none of today’s joyousness behind.
+Now, may the Lord who brought us through to the coming around of the season, grant to
+us, as competitors in these preliminary contests, that we may display enduring firmness
+and vigor, to attain also the crowns on the decisive day; now, in memory of the saving
+passions, but in the coming ages, by the recompense to us of the things done in life, by
+the righteous judgment of his Christ; because the glory belongs to him forever! Amen.
+  '''),
+  Reading('On Marriage and Family Life','Saint John Chrysostom Homily 19 On Corinthians Chapter 7','St. John Chrysostom','''
+Now concerning the things whereof ye wrote to me: it is good for a man not to touch a woman. But because of fornications, let each man have his own wife; and let each woman have her own husband. (1 Cor7:1-2)
+
+Having corrected the three heaviest things laid to their charge, one, the distraction of the Church, another, about the fornicator, a third, about the covetous person, he thenceforth uses a milder sort of speech. And he interposes some exhortation and advice about marriage and virginity, giving the hearers some respite from more unpleasant subjects. But in the second Epistle he does the contrary; he begins from the milder topics, and ends with the more distressing. And here also, after he has finished his discourse about virginity, he again launches forth into matter more akin to reproof; not setting all down in regular order, but varying his discourse in either kind, as the occasion required and the exigency of the matters in hand.
+
+Wherefore he says, “Now concerning the things whereof you wrote unto me.” For they had written to him, “Whether it was right to abstain from one’s wife, or not:” and writing back in answer to this and giving rules about marriage, he introduces also the discourse concerning virginity: “It is good for a man not to touch a woman.” “For if,” says he, “you enquire what is the excellent and greatly superior course, it is better not to have any connection whatever with a woman: but if you ask what is safe and helpful to your own infirmity, be connected by marriage.”
+
+But since it was likely, as also happens now, that the husband might be willing but the wife not, or perhaps the reverse, mark how he discusses each case. Some indeed say that this discourse was addressed by him to priests. But I, judging from what follows, could not affirm that it was so: since he would not have given his advice in general terms. For if he were writing these things only for the priests, he would have said, “It is good for the teacher not to touch a woman.” But now he has made it of universal application, saying, “It is good for a man;” not for priest only. And again, “Art you loosed from a wife? Seek not a wife.” He said not, “You who are a priest and teacher,” but indefinitely. And the whole of his speech goes on entirely in the same tones and in saying, “Because of fornications, let every man have his own wife” by the very cause alleged for the concession he guides men to continence.
+
+Ver. 3. “Let the husband pay the wife the honor  due to her: in like manner the wife the husband.”
+
+Now what is the meaning of “the due honor? The wife has not power over her own body;” but is both the slave and the mistress of the husband. And if you decline the service which is due, you have offended God. But if thou wish to withdraw thyself, it must be with the husband’s permission, though it be but a for short time. For this is why he calls the matter a debt, to show that no one is master of himself but that they are servants to each other.
+
+When therefore you see a harlot tempting you, say, “My body is not mine, but my wife’s.” The same also let the woman say to those who would undermine her chastity, “My body is not mine, but my husband’s.”
+
+Now if neither husband nor wife has power even over their own body, much less have they over their property. Hear ye, all that have husbands and all that have wives: that if you must not count your body your own, much less your money
+
+Elsewhere I grant he gives to the husband abundant precedence, both in the New Testament, and the Old saying, “Thy turning shall be towards thy husband, and he shall rule over thee.”(Gen. 3:16.) Paul does so too by making a distinction thus, and writing, “Husbands, love your wives; and let the wife see that she reverence her husband.”(Ephes. v. 25, 33.)  But in this place we hear no more of greater and less, but it is one and the same right. Now why is this? Because his speech was about chastity. “In all other things,” says he, “let the husband have the prerogative; but not so where the question is about chastity.” “The husband has no power over his own body, neither the wife.” There is great equality of honor, and no prerogative.
+
+Ver. 5. “Defraud ye not one the other, except it be by consent.”
+
+What then can this mean? “Let not the wife,” says he, “exercise continence, if the husband be unwilling; nor yet the husband without the wife’s consent.” Why so? Because great evils spring from this sort of continence. For adulteries and fornications and the ruin of families have often arisen from hence. For if when men have their own wives they commit fornication, much more if yon defraud them of this consolation. And well says he, “Defraud” here, and “debt” above, that he might show the strictness of the right of dominion in question. For that one should practice continence against the will of the other is “defrauding;” but not so, with the other’s consent: any more than I count myself defrauded, if after persuading me you take away any thing of mine. Since only he defrauds who takes against another’s will and by force. A thing which many women do, working sin rather than righteousness, and thereby becoming accountable for the husband’s uncleanness, and rending all asunder. Whereas they should value concord above all things, since this is more important than all beside.
+
+We will, if you please, consider it with a view to actual cases. Thus, suppose a wife and husband, and let the wife be continent, without consent of her husband; well then, if hereupon he commit fornication, or though abstaining from fornication fret and grow restless and be heated and quarrel and give all kind of trouble to his wife; where is all the gain of the fasting and the continence, a breach being made in love? There is none. For what strange reproaches, how much trouble, how great a war must of course arise! Since when in a house man and wife are at variance, the house will be no better off than a ship in a storm when the master is upon ill terms with the man at the head. Wherefore he says, “Defraud not one another, unless it be by consent for a season, that ye may give yourselves unto prayer.” It is prayer with unusual earnestness which he here means. For if he is forbidding those who have intercourse with one another to pray, how could “pray without ceasing” have any place? It is possible then to live with a wife and yet give heed unto prayer. But by continence prayer is made more perfect. For he did not say merely, “That ye may pray;” but, “That ye may give yourselves unto it,” as though what he speaks of might cause not uncleanness but much occupation.
+
+“And may be together again, that Satan tempt you not.” Thus lest it should seem to be a matter of express enactment, he adds the reason. And what is it? “That Satan tempt you not.” And that you may understand that it is not the devil only who causes this crime, I mean adultery, he adds, “because of your incontinency.”
+
+“But this I say by way of permission, not of commandment. For I would that all men were even as I myself; in a state of continence.” This he doth in many places when he is advising about difficult matters; he brings forward himself, and says, “Be ye imitators of me.”
+
+“Howbeit each man has his own gift from God, one after this manner, and another after that.” Thus since he had heavily charged them saying, “for your incontinence,” he again comforts them by the words, “each one has his own gift of God;” not declaring that towards that virtue there is no need of zeal on our part, but, as I was saying before, to comfort them. For if it be a “gift,” and man contributes nothing thereunto, how says Paul:
+
+“But (v. 8.) I say to the unmarried and to widows, it is good for them if they abide even as 1: (v. 9.) but if they have not continency let them marry?”
+
+Do you see the strong sense of Paul how he both signifies that continence is better, and yet puts no force on the person who cannot attain to it; fearing lest some offence arise?
+
+“For it is better to marry than to burn.” He indicates how great is the tyranny of concupiscence. What he means is something like this: “If you have to endure much violence and burning desire, withdraw yourself from your pains and toils, lest haply you be subverted.”
+
+Ver. 10. “But to the married I give charge, yet not I, but the Lord.”
+
+Because it is a law expressly appointed by Christ which he is about to read to them about the “not putting away a wife without fornication; “(Mat. 5:32; 19:9; Mark 10:11; Luke 16:18.) therefore he says, “Not I.” True it is what was before spoken though it were not expressly stated, yet it also is His decree. But this, you see, He had delivered in express words. So that the words “I and not I” have this difference of meaning. For that you might not imagine even his own words to be human, therefore he added, “For I think that I also have the Spirit of God.”
+
+Now what is that which “to the married the Lord commanded? That the wife depart not from her husband: (v. 11.) but if she depart, let her remain unmarried, or be reconciled unto her husband Here, seeing that both on the score of continence and other pretexts, and because of infirmities of temper, it fell out that separations took place: it were better, he says, that such things should not be at all; but however if they take place, let the wife remain with her husband, if not to cohabit with him, yet so as not to introduce any other to be her husband.
+
+Ver. 12. “But to the rest speak I, not the Lord. If any brother has a wife that believes not, and she is content to dwell with him, let him not leave her. And if any woman has a husband that believes not, and he is content to dwell with her, let her not leave him.”
+
+For as when discoursing about separating from fornicators, he made the matter easy by the correction which he applied to his words, saying, “Howbeit, not altogether with the fornicators of this world;” so also in this case he provides for the abundant easiness of the duty, saying, “If any wife has a husband, or husband a wife, that believes not, let him not leave her.” What do you say? “If he be an unbeliever, let him remain with the wife, but not if he be a fornicator? And yet fornication is a less sin than unbelief.” I grant, fornication is a less sin: but God spares your infirmities extremely. And this is What He does about the sacrifice, saying, “Leave the sacrifice, and be reconciled to your brother.” (Mat. 5:24.) This also in the case of the man who owed ten thousand talents. For him too He did not punish for owing him ten thousand talents, but for demanding back a hundred pence from his fellow-servant He took vengeance on him.
+
+Then lest the woman might fear, as though she became unclean because of intercourse with her husband, he says, “For the unbelieving husband is sanctified in the wife, and the unbelieving wife is sanctified in the husband.” And yet, if “he that is joined to an harlot is one body,” it is quite clear that the woman also who is joined to an idolater is one body. Well: it is one body; nevertheless she becomes not unclean, but the cleanness of the wife overcomes the uncleanness of the husband; and again, the cleanness of the believing husband overcomes the uncleanness of the unbelieving wife.
+
+How then in this case is the uncleanness overcome, and therefore the intercourse allowed; while in the woman who prostitutes herself, the husband is not condemned in casting her out? Because here there is hope that the lost member may be saved through the marriage; but in the other case the marriage has already been dissolved; and there again both are corrupted; but here the Fault is in one only of the two. I mean something like this: she that has been guilty of fornication is utterly abominable: if then “he that is joined to an harlot is one body,” he also becomes abominable by having connection with a harlot; wherefore all the purity flits away. But in the case before us it is not so. But how? The idolater is unclean but the woman is not unclean. For if indeed she were a partner with him in that wherein he is unclean, I mean his impiety, she herself would also become unclean. But now the idolater is unclean in one way, and the wife holds communion with him in another wherein he is not unclean. For marriage and mixture of bodies is that wherein the communion consists.
+
+Again, there is a hope that this man may be reclaimed by his wife for she is made completely his own: but for the other it is not very easy. For how will she who dishonored him in former times and became another’s and destroyed the rights of marriage, have power to reclaim him whom she had wronged; him, moreover, who still remains to her as an alien?
+
+Again in that case, after the fornication the husband is not a husband: but here, although the wife be an idolatress, the husband’s rights are not destroyed.
+
+However, he does not simply recommend cohabitation with the unbeliever, but with the qualification that he wills it. Wherefore he said, “And he himself be content to dwell with her.” For, tell me, what harm is there when the duties of piety remain unimpaired and there are good hopes about the unbeliever, that those already joined should so abide and not bring in occasions of unnecessary warfare? For the question now is not about those who have never yet come together, but about those who are already joined. He did not say, If any one wish to take an unbelieving wife, but, “If any one has an unbelieving wife.” Which means, If any after marrying or being married have received the word of godliness, and then the other party which had continued in unbelief still yearn for them to dwell together, let not the marriage be broken off. “For,” saith he, “the unbelieving husband is sanctified in the wife.” So great is the superabundance of thy purity.
+
+What then, is the [pagan] Greek holy? Certainly not: for he said not, He is holy; but, “He is sanctified in his wife.” And this he said, not to signify that he is holy, but to deliver the woman as completely as possible from her fear and lead the man to desire the truth. For the uncleanness is not in the bodies wherein there is communion, but in the mind and the thoughts. And here follows the proof; namely, that if thou continuing unclean have offspring, the child, not being of thee alone, is of course unclean or half clean. But now it is not unclean. To which effect he adds, “else were your children unclean; but now are they holy;” that is, not unclean. But the Apostle calls them, “holy,”‘ by the intensity of the expression again casting out the dread arising from that sort of suspicion.
+
+Ver. 15. “Yet if the unbelieving departs, let him depart,”for in this case the matter is no longer fornication. But what is the meaning of, “if the unbelieving departs?” For instance, if he bids you to sacrifice and take part in his ungodliness on account of thy marriage, or else part company; it were better the marriage were annulled, and no breach made in godliness. Wherefore he adds, “A brother is not under bondage, nor yet a sister, in such cases.” If day by day he buffet thee and keep up combats on this account, it is better to separate. For this is what he glances at, saying, “But God has called us in peace.” For it is the other party who furnished the ground of separation, even as he did who committed uncleanness.
+
+Ver. 16. “For how do you know, O wife, whether thou shalt save thine husband?” This again refers to that expression, “let her not leave him.” That is, “if he makes no disturbance, remain,” saith he, “for there is even profit in this; remain and advise and give counsel and persuade.” For no teacher will have such power to prevail as a wife. And neither, on one hand, doth he lay any necessity upon her and absolutely demand the point of her, that he may not again do what would be too painful; nor, on the other, doth he tell her to despair: but he leaves the matter in suspense through the uncertainty of the future, saying, “For how do you know, O wife, whether you will save your husband? or how do you know, O husband whether you will save your wife?”
+
+And again, ver. 17. “Only as God has distributed to each man, as the Lord has called each, so let him walk. Was any one called being circumcised? let him not become uncircumcised. Was any called in uncircumcision? let him not be circumcised. Circumcision is nothing, and uncircumcision is nothing; but the keeping of the commandments of God. Let each man abide in that calling wherein he was called. Were you called, being a slave? Care not for it.”
+
+These things contribute nothing unto faith, saith he. Be not then contentious neither be troubled; for the faith has cast out all these things.
+
+“Let each man abide in that calling wherein he was called. Have you been called, having an unbelieving wife? Continue to have her. Cast not out your wife for the faith’s sake. Have you been called, being a slave? Care not for it. Continue to be a slave. Have you been called, being in uncircumcision? Remain uncircumcised. Being circumcised, did you become a believer? Continue circumcised. For this is the meaning of, “As God has distributed unto each man.” For these are no hindrances to piety. You are called, being a slave; another, with an unbelieving wife; another, being circumcised.
+
+Astonishing! where has he put slavery? As circumcision profits not: and uncircumcision does no harm; so neither does slavery, nor yet liberty. And that he might point out this with surpassing clearness, he says, “But even if you can become free, use it rather:” that is, rather continue a slave. Now Upon what possible ground does he tell the person who might be set free to remain a slave? He means to point out that slavery is no harm but rather an advantage.
+
+Now we are not ignorant that some say, the words, “use it rather,” are spoken with regard to liberty: interpreting it, “if you canst become free, become free.”  But the expression would be very contrary to Paul’s manner if he intended this. For he would not, when consoling the slave and signifying that he was in no respect injured, have told him to get free. Since perhaps some one might say, “What then, if I am not able? I am an injured and degraded person.” This then is not what he says: but as I said, meaning to point out that a man gets nothing by being made free, he says, “Though you have it in your power to be made free, remain rather in slavery.”
+
+Next he adds also the cause; “For he that was called in the Lord being a bondservant, is the Lord’s free man: likewise he that was called, being free, is Christ’s bondservant.” “For,” said he, “in the things that relate to Christ, both are equal: and like as you are the slave of Christ, so also is thy master. How then is the slave a free man? Because He has freed you not only from sin, but also from outward slavery while continuing a slave. For he suffers not the slave to be a slave, not even though he be a man abiding in slavery: and this is the great wonder.
+
+But how is the slave a free man while continuing a slave? When he is freed from passions and the diseases of the mind: when he looks down upon riches and wrath and all other the like passions.
+
+Ver. 23. “Ye were bought with a price: become not bondservants of men.”
+
+This saying is addressed not to slaves only but also to free men. For it is possible for one who is a slave not to be a slave; and for one who is a freeman to be a slave. “And how can one be a slave and not a slave?” When he does all for God: when he feigns nothing, and does nothing out of eye-service towards men: that is how one that is a slave to men can be free. Or again, how does one that is free become a slave? When he serves men in any evil service, either for gluttony or desire of wealth or for office’ sake. For such a one, though he be free, is more of a slave than any man.
+
+And consider both these points. Joseph was a slave but not a slave to men: wherefore even in slavery he was freer than all that are free. For instance, he yielded not to his mistress; yielded not to the purposes which she who possessed him desired. Again she was free; yet none ever so like a slave, courting and beseeching her own servant. But she prevailed not on him, who was free, to do what he would not. This then was not slavery; but it was liberty of the most exalted kind. For what impediment to virtue had he from his slavery? Let men hear, both slaves and free. Which was the slave? He that was entreated or she that did entreat? She that besought or he that despised her supplication?
+
+In fact, there are limits set to slaves by God Himself; and up to what point one ought to keep them, has also been determined, and to transgress them is wrong. Namely, when your master commands nothing which is unpleasing to God, it is right to follow and to obey; but no farther. For thus the slave becomes free. But if you go further, even though you are free you are become a slave. At least he intimates this, saying, “Be not ye the servants of men.”
+
+But if this be not the meaning, if he bade them forsake their masters and strive contentiously to become free, in what sense did he exhort them, saying, “Let each one remain in the calling in which he is called?” And in another place, (1 Tim. vi. 1, 2.) “As many servants as are under the yoke, let them count their own masters worthy of all honor; and those that have believing masters, let them not despise them, because they are brethren who partake of the benefit.” And writing to the Ephesians also and to the Colossians, he ordains and exacts the same rules. Whence it is plain that it is not this slavery which he annuls, but that which caused as it is by vice befalls free men also: and this is the worst kind of slavery, though he be a free man who is in bondage to it. For what profit had Joseph’s brethren of their freedom? Were they not more servile than all slaves; both speaking lies to their father, and to the merchants using false pretenses, as well as to their brother? But not such was the free man: rather every where and in all things he was true. And nothing had power to enslave him, neither chain nor bondage nor the love of his mistress nor his being in a strange land. But he abode free everywhere. For this is liberty in the truest sense when even in bondage it shines through.
+
+Such a thing is Christianity; in slavery it bestows freedom. And as that which is by nature an invulnerable body then shows itself to be invulnerable when having received a dart it suffers no harm; so also he that is strictly free then shows himself, when even under masters he is not enslaved. For this cause his bidding is, “remain a slave.” But if it is impossible for one who is a slave to be a Christian such as he ought to be, the [pagan] Greeks will condemn true religion of great weakness: whereas if they can be taught that slavery in no way impairs godliness, they will admire our doctrine. For if death hurt us not, nor scourges, nor chains, much less slavery. Fire and iron and tyrannies innumerable and diseases and poverty and wild beasts and countless things more dreadful than these, have not been able to injure the faithful; nay, they have made them even mightier. And how shall slavery be able to hurt? It is not slavery itself, beloved, that hurts; but the real slavery is that of sin. And if you are not a slave in this sense, be bold and rejoice. No one shall have power to do you any wrong, having the temper which cannot be enslaved. But if you are a slave to sin, even though you are ten thousand times free you have no good of your freedom.
+
+For, tell me, what profit is it when, though not in bondage to a man, you lie down in subjection to your passions? Since men indeed often know how to spare; but those masters are never satiated with thy destruction. Art you in bondage to a man? Why, your master also is slave to thee, in arranging about thy food, in taking care of your health and in looking after your shoes and all the other things. And you do not fear so much less that you should offend your master, as he fears lest any of those necessaries should fail you. “But he sits down, while you stand.” And what of that? Since this may be said of you as well as of him. Often, at least, when you are lying down and sleeping sweetly, he is not only standing, but undergoing endless discomforts in the market-place; and he lies awake more painfully than you.
+
+For instance; what did Joseph suffer from his mistress to be compared with what she suffered from her evil desire? For he indeed did not the things which she wished to put upon him; but she performed every thing which her mistress ordered her, I mean her  spirit of unchastity: which left not off until it had put her to open shame. What master commands such things? what savage tyrant? “Entreat your slave,” that is the word: “flatter the person bought with thy money, supplicate the captive; even if he rejects you with disgust, again besiege him: even if you speak to him often, and he consent not, watch for his being alone, and force him, and become an object of derision.” What can be more dishonorable, what more shameful, than these words? “And if even by these means you make no progress, why, accuse him falsely and deceive your husband.” Mark how mean, how shameful are the commands, how unmerciful and savage and frantic. What command does the master ever lay on his slave, such as those which her wantonness then laid upon that royal woman? And yet she dare not disobey. But Joseph underwent nothing of this sort, but every thing on the contrary which brought glory and honor.
+
+Would you like to see yet another man under severe orders from a hard mistress, and without spirit to disobey any of them? Consider Cain, what commands were laid on him by his envy. She ordered him to slay his brother, to lie unto God, to grieve his father, to cast off shame; and he did it all, and in nothing refused to obey. And why marvel that over a single person so great should be the power of this mistress? She has often destroyed entire nations. For instance, the Midianitish women took the Jews, and all but bound them in captivity; their own beauty kindling desire, was the means of their vanquishing that whole nation. Paul then to cast out this sort of slavery, said, “Become not servants of men;” that is, “Obey not men commanding unreasonable things: nay, obey not yourselves.” Then having raised up their mind and made it mount on high, he says,
+
+Ver. 25. “Now concerning virgins. I have no commandment of the Lord; but I give my judgment, as one that has obtained mercy of the Lord to be faithful.”
+
+Advancing on his way in regular order, he proceeds next to speak concerning virginity. For after that he had exercised and trained them, in his words concerning continence, he goes forth towards what is greater, saying, “I have no commandment, but I esteem it to be good.” For what reason? For the self-same reason as he had mentioned respecting continence.
+
+Ver. 27. “Are you bound unto a wife? Seek not to be loosed. Are you loosed from a wife? Seek not a wife.”
+
+These words carry no contradiction to what had been said before but rather the most entire agreement with them. For he says in that place also, “Except it be by consent:” as here he says, “Art thou bound unto a wife? Seek not separation.” This is no contradiction. For its being against consent makes a dissolution: but if with consent both live continently, it is no dissolution.
+
+Then, lest this should seem to be laying down a law, he subjoins, (v. 28.) “but if you marry, you have not sinned.”
+
+He next alleges the existing state of things, “the present distress, the shortness of the time,” and “the affliction.” For marriage draws along with it many things, which indeed he has glanced at, as well here as also in the discourse about continence: there, by saying, “the wife has not power over herself;” and here, by the expression, “Thou art bound.”
+
+“But if you marry, you have not sinned.” He is not speaking about her who has made choice of virginity, for if it comes to that, she has sinned. Since if the widows are condemned for having to do with second marriages after they have once chosen widowhood, much more the virgins.
+
+“But such shall have trouble in the flesh.” “And pleasure too,” you will say: but observe how he curtails this by the shortness of the time, saying, (v. 28.) “the time is shortened;” that is, “we are exhorted to depart now and go forth, but you are running further in.” And yet even although marriage had no troubles, even so we ought to press on towards things to come. But when it has affliction too, what need to draw on one’s self an additional burden. What occasion to take up such a load, when even after taking it you must use it as having it not? For “those even that have wives must be,” he saith, “as though they had none.”
+
+Then, having interposed something about the future, he brings back his speech to the present. For some of his topics are spiritual; as that, “the one careth about the things which be her husband’s, the other about those which be God’s.” Others relate to this present life; as, “I would have you to be free from cares.” But still with all this he leaves it to their own choice: inasmuch as he who after proving what is best goes back to compulsion, seems as if he did not trust his own statements. Wherefore he rather attracts them by concession, and checks them as follows:
+
+Ver. 35. “And this I say for your own profit, not that I may cast a snare upon you, but for that which is seemly, and that ye may attend upon the Lord without distraction.”
+
+Let the virgins hear that not by that one point is virginity defined; for she that is careful about the things of the world cannot be a virgin, nor seemly. Thus, when he said, “There is difference between a wife and a virgin,” he added this as the difference, and that wherein they are distinguished from each other. And laying down the definition of a virgin and her that is not a virgin, he names, not marriage nor continence but leisure from engagements and multiplicity of engagements. For the evil is not in the cohabitation, but in the impediment to the strictness of life.
+
+Ver. 36. “But if any man think that he behaves himself unseemly toward his virgin.”
+
+Here he seems to be talking about marriage; but all that he says relates to virginity; for he allows even a second marriage, saying, “only in the Lord.” Now what means, “in the Lord?” With chastity, with honor: for this is needed very where, and must be pursued l for else we cannot see God.
+
+Now if we have passed lightly by what he says of virginity, let no one accuse us of negligence; for indeed an entire book has been composed by us upon this topic and as we have there with all the accuracy which we could, gone through every branch of the subject, we considered it a waste of words to introduce it again here. Wherefore, referring the hearer to that work as concerns these things, we will say this one thing here: We must follow after continence. For, he says, “follow after peace, and the sanctification without which no one shall see the Lord.” Therefore that we may be accounted worthy to see Him, whether we be in virginity or in the first marriage or the second, let us follow after this that we may obtain the kingdom of heaven, through the grace and loving-kindness of our Lord Jesus Christ; to Whom with the Father and the Holy Spirit, be glory, power, honor, now, henceforth, and for everlasting ages. Amen.
+  '''),
 ];
 
 
